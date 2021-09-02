@@ -1,0 +1,130 @@
+#application {
+    background-color: var(--bg-item);
+    padding:2rem;
+    justify-content: center;
+
+    a {
+        text-decoration: none;
+    }
+
+    .block {
+
+        background-image: var(--gradient-1);
+        border-radius: rem(25);
+        flex-wrap: nowrap;
+        box-shadow: 0 10px 50px -10px #d6d6d6;
+    }
+
+    .block-right {
+        align-self: flex-end;
+        padding: 0;
+        width: 50%;
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: rotate(2deg);
+        }
+    }
+
+    .title-3 {
+        font-size: var(--size-title);
+        max-width: 700px;
+    }
+
+    .block-left {
+        color: var(--color-white);
+        order: -1;
+        padding:rem(50) rem(40);
+
+        * {
+            color: inherit;
+        }
+
+        .btn-app {
+            opacity: 1;
+            padding: 0.8rem 1.5rem;
+            display: inline-block;
+            background-color: var(--color-white);
+            color: var(--color-green) !important;
+            border-radius: rem(10);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            border: 2px solid var(--color-white);
+            transition: color 0.3s, transform 0.3s, transform 0.3s 0.2s, border 0.3s, background-color 0.3s 0.3s, box-shadow 0.3s 0.3s;
+
+            &:hover {
+                background-image: var(--gradient-1);
+                color: var(--color-white) !important;
+                box-shadow: 0 0 15px -5px rgba(255, 255, 255, 0.8);
+                transition: color 0.3s, box-shadow 0.3s, transform 0.3s;
+                transform: scale(0.95);
+
+            }
+        }
+
+
+    }
+
+    p {
+        max-width: 500px;
+        margin: 1rem 0;
+
+        &:nth-last-of-type(1) {
+
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+@media only screen and (max-width:850px) {
+    #application {
+        .block {
+            flex-wrap: wrap;
+
+            .block-right {
+                flex-basis: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:500px) {
+    #application {
+        padding:0;
+        .block-left {
+            text-align: center;
+            padding: rem(15);
+            .title-3{
+                text-align: center;
+            }
+        }
+
+        .btn-app {
+            padding: 0.5rem 1.5rem;
+            margin: rem(10);
+
+            &:hover {
+                transform: none;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:450px) {
+    #application {
+
+        .block-left {
+            padding: rem(12);
+            .btn-app {
+                padding: 0.5rem 1rem;
+                margin: 0.5rem 0.1125rem;
+
+                &:hover {
+                    transform: none;
+
+                }
+            }
+        }
+    }
+}

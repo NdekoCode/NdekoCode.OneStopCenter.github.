@@ -1,0 +1,106 @@
+@font-face{
+    font-family:'Poppins';
+    src:url('../fonts/poppins/Poppins-Light.otf')format("opentype");
+    font-weight:300;
+    font-display:swap;
+
+}
+
+@font-face{
+    font-family:'Poppins';
+    src:url('../fonts/poppins/Poppins-Regular.otf')format("opentype");
+    font-weight:400;
+    font-display:swap;
+
+}
+@font-face{
+    font-family:'Poppins';
+    src:url('../fonts/poppins/Poppins-Medium.otf')format("opentype");
+    font-weight:500;
+    font-display:swap;
+
+}
+
+@font-face{
+    font-family:'Poppins';
+    src:url('../fonts/poppins/Poppins-Bold.otf')format("opentype");
+    font-weight:700;
+    font-display:swap;
+
+}
+
+@font-face{
+    font-family:'Inter';
+    src:url('../fonts/inter/Inter-Light-BETA.ttf')format("truetype");
+    font-weight:300;
+    font-display:swap;
+
+}
+
+@font-face{
+    font-family:'Inter';
+    src:url('../fonts/inter/Inter-Regular.ttf')format("truetype");
+    font-weight:400;
+    font-display:swap;
+
+}
+
+@font-face{
+    font-family:'Inter';
+    src:url('../fonts/inter/Inter-Medium.ttf')format("truetype");
+    font-weight:500;
+    font-display:swap;
+
+}
+@font-face{
+    font-family:'Inter';
+    src:url('../fonts/inter/Inter-SemiBold.ttf')format("truetype");
+    font-weight:600;
+    font-display:swap;
+
+}
+
+@font-face{
+    font-family:'Inter';
+    src:url('../fonts/inter/Inter-Bold.ttf')format("truetype");
+    font-weight:700;
+    font-display:swap;
+
+}
+
+@font-face{
+    font-family:'Inter';
+    src:url('../fonts/inter/Inter-ExtraBold.ttf')format("truetype");
+    font-weight:900;
+    font-display:swap;
+
+}
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:var(--font-primary);
+    font-weight:400;
+    color:var(--color-dark);
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:var(--font-secondary);
+    line-height:1.2em;
+    color:var(--color-title);
+    text-align:left;
+}
+input,button{
+
+    font-family:var(--font-primary);
+}
+a{
+    color:inherit;
+    transition: color 0.3s, opacity 0.3s;
+    opacity:0.85;
+    &:hover{
+        opacity: 1;
+    }
+}

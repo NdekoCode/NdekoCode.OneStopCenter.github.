@@ -1,0 +1,143 @@
+#services {
+    background-color: lighten($bg-item, 4.5);
+    padding: rem(100) 0;
+
+    .container {
+        position: relative;
+        z-index: 1;
+        // max-width: $size-container - 100px;
+    
+
+    &.dots{
+        &::after {
+            bottom: -130px;
+            left: 500px;
+        }
+    }
+
+    &.circle{
+        &::before{
+            width:600px;
+            height:600px;
+            left: -170px;
+            top: -160px;
+            }
+    }
+    }
+
+    .card {
+
+        min-height: 300px;
+        padding: 1.5rem;
+        background-color: var(--color-white);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.105);
+        transition: box-shadow 0.3s, transform 0.3s;
+        position:relative;
+        &::after,
+        &::before{
+            content:'';
+            height:5px;
+            position:absolute;
+        }
+        &::after{
+
+            right:0;
+            left:50%;
+            bottom:0;
+            border-radius:rem(50);
+            transition:0.3s;
+            @include gradient(45deg,$color-title,$color-green)
+        }
+        &::before{
+
+            top:0;
+            left:0;
+            right:50%;
+            bottom:0;
+            border-radius:rem(50);
+            transition:0.3s;
+            @include gradient(45deg,$color-title,$color-green)
+        }
+        &:hover::before{
+            right:100%;
+        }
+        &:hover::after{
+            left:100%;
+        }
+
+        .title-4 {
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        p {
+            color: lighten($color-gray, 10);
+        }
+
+        &:hover {
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+            .ico span{
+                transform:rotate(360deg);
+            }
+        }
+    }
+}
+
+.card {
+    max-width: 500px;
+    min-height: 200px;
+    margin: rem(32) rem(8);
+    border-radius: rem(10);
+    padding: 1rem;
+    margin-bottom: 0;
+
+}
+
+.title-4 {
+    font-size: 1.5em;
+}
+
+.title-content {
+    text-align: center;
+
+    .title-6 {
+        font-size: 2rem;
+        color: var(--color-gray);
+    }
+
+    .title-3 {
+        font-size: 1.75rem;
+        margin-top: rem(10);
+    }
+
+}
+
+.ico {
+    span {
+        font-size: 2em;
+        color: darken($color-green, 5);
+        transition:0.3s ease-in-out;
+    }
+}
+
+@media only screen and (min-width:950px) {
+    .card {
+        min-width: 450px;
+        width:350px;
+    }
+    
+}
+@media only screen and (max-width:940px) {
+    .card {
+        min-width: 350px;
+        width:350px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .card {
+        min-width: 250px;
+        width:auto;
+    }
+    .container{
+        padding:15px;
+    }
+}

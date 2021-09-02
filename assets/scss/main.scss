@@ -1,0 +1,63 @@
+/* ================== Importation des librairies ========*/
+@import "libs/variables.scss";
+@import "libs/mixins.scss";
+@import "libs/functions.scss";
+/* ================== Fin Importation des librairies ========*/
+
+// Importation des modules
+@import "modules/utils.scss";
+
+/* ==  =================== Regle de base ===============*/
+@import "modules/basics.scss";
+
+
+@include space();
+@include space(padding,p);
+@include spaceDirection(margin,y,m);
+@include spaceDirection(margin,x,m);
+@include spaceDirection(margin,t,m);
+@include spaceDirection(margin,b,m);
+@include spaceDirection(margin,r,m);
+
+@include spaceDirection(padding,y,p);
+@include spaceDirection(padding,x,p);
+@include spaceDirection(padding,t,p);
+@include spaceDirection(padding,b,p);
+/* ==  =================== Fin Regle de base ===============*/
+
+/* ==  =================== Banniere ===============*/
+@import "modules/banner.scss";
+
+/* ==  =================== Fin Banniere ===============*/
+
+/* ==  =================== Infos ===============*/
+@import "modules/infos.scss";
+
+/* ==  =================== Fn Infos ===============*/
+
+
+/* ==  =================== Services ===============*/
+@import "modules/services.scss";
+
+/* ==  =================== Fin Services ===============*/
+
+/* ==  =================== About ===============*/
+@import "modules/about.scss";
+
+/* ==  =================== Fin About ===============*/
+
+/* ==  =================== Appointment(Rendez-vous )===============*/
+@import "modules/appointment.scss";
+
+/* ==  =================== Fin Appointment(Rendez-vous )===============*/
+
+/* ==  =================== Application ===============*/
+@import "modules/application.scss";
+
+/* ==  =================== Fin Application ===============*/
+
+/* ==  =================== Doctos ===============*/
+@import "modules/doctors.scss";
+
+/* ==  =================== Fin Doctorss ===============*/
+

@@ -1,0 +1,150 @@
+
+
+
+// Services 
+
+@media only screen and (min-width:950px) {
+    .card {
+        min-width: 450px;
+        width: 350px;
+    }
+
+}
+// Abouts
+@media only screen and (max-width:991px) {
+    #about {
+
+        background-size: 100%;
+
+        .container {
+            padding: 0.125rem;
+        }
+    }
+
+
+    .card {
+        min-width: 350px;
+        width: 350px;
+    }
+}
+
+
+@media only screen and(max-width:750px) {
+    #application {
+        .block {
+            flex-wrap: wrap!important;
+        }
+
+        .block-left,
+        .block-right {
+            flex-basis: 100%!important;
+            width: 100%!important;
+        }
+    }
+    
+
+    .block {
+        flex-wrap: wrap;
+    }
+
+        .block-left,
+        .block-right {
+            width: 100%;
+            flex-basis: 100%;
+            padding: 2rem;
+        }
+    .circle,
+    .dots {
+
+        &::before,
+        &::after {
+            width: 250px !important;
+            height: 250px !important;
+
+        }
+    }
+
+    .block {
+        flex-wrap: wrap;
+    }
+
+    .block {
+
+        .block-left,
+        .block-right {
+            flex-basis: 100%;
+        }
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+
+@media only screen and(max-width:650px) {
+
+    #about {
+        padding: rem(100) rem(40);
+
+        .container {
+            width: 100%;
+            float: none;
+        }
+
+
+        .block-left {
+            text-align: justify;
+            flex-basis: 100%;
+            width: 100%;
+        }
+
+
+        .block-right-item {
+            margin: 1rem;
+        }
+    }
+
+    .circle,
+    .dots {
+
+        &::before,
+        &::after {
+            display: none;
+
+        }
+    }
+
+    #application {
+
+        .block-left {
+            text-align: justify;
+            flex-basis: 100%;
+            width: 100%;
+        }
+    }
+
+}
+
+
+@media only screen and(max-width:550px) {
+    #about {
+        background-image: none;
+        margin: rem(25) 0;
+        padding: rem(50) rem(25);
+
+        .block-right {
+            min-width: auto;
+            padding: 0;
+        }
+
+        .block-left {
+            padding: 0;
+        }
+    }
+
+    .card {
+        min-width: 250px;
+        width: auto;
+    }
+}

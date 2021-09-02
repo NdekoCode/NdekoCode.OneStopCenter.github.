@@ -1,0 +1,151 @@
+%container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.container {
+    @extend %container;
+}
+
+.container-centered {
+    @extend %flex-center-row-y;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+%shadow-x {
+    box-shadow: 0 rem(15) rem(45) rem(-25) var(--color-dark);
+}
+
+%shadow-y {
+    box-shadow: rem(15) 0 rem(45) rem(-25) var(--color-dark);
+}
+
+%flex {
+    display: flex;
+}
+
+%flex-center-row-x {
+    @extend %flex;
+    justify-content: center;
+}
+
+%flex-center-row-y {
+    @extend %flex;
+    align-items: center;
+}
+
+.flex {
+    @extend %flex;
+}
+
+.center-column-x {
+    @extend %flex-center-row-y;
+    flex-direction: column;
+
+}
+
+.circle {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 550px;
+        height: 550px;
+        // display:none;
+
+    }
+
+    &::before {
+
+        background-image: radial-gradient(circle closest-side, var(--color-gray), var(--color-title));
+        border-radius: 50%;
+        top: -150px;
+        right: 5px;
+        opacity: 0.07;
+    }
+}
+.title-1{
+    font-size:3rem;
+}
+.title-2{
+    font-size:2.5rem;
+}
+.title-3{
+    font-size:2rem;
+}
+.title-4{
+    font-size:1.8rem;
+}
+.title-6{
+    font-size:1.5rem;
+}
+.dots {
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width:300px;
+        height: 300px;
+        // display:none;
+
+    }
+
+    &::after {
+        left: 5px;
+        bottom: -75px;
+        background: url('../img/dots.svg') no-repeat left bottom / contain;
+        opacity: 0.17;
+    }
+}
+
+.center-column-y {
+    @extend %flex-center-row-x;
+    flex-direction: column;
+
+}
+
+.center-row-x {
+    @extend %flex-center-row-x;
+}
+
+.center-row-y {
+    @extend %flex-center-row-y;
+}
+
+.flex-center-row {
+    @extend %flex-center-row-x;
+    @extend %flex-center-row-y;
+}
+
+.center-column {
+    @extend %flex-center-row-x;
+    @extend %flex-center-row-y;
+    flex-direction: column;
+}
+
+.shadow-x {
+    @extend %shadow-x;
+}
+
+.shadow-y {
+    @extend %shadow-y;
+}
+
+
+.info-item {
+    border-radius: rem(10);
+    @include gradient(45deg,$color-title,$color-green);
+    cursor: pointer;
+    margin: 0.5rem;
+    
+    img{
+        max-width: 100%;
+        height:auto;
+        display: block;
+    }
+}

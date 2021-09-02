@@ -1,0 +1,63 @@
+@mixin gradient($position,$color1,$color2){
+    background-image: linear-gradient($position,$color1,$color2);
+}
+@mixin space($property:margin, $shortProperty:m, $basic:0.25) {
+
+    @for $i from 1 through 5 {
+        .#{$shortProperty}-#{$i} {
+            #{$property}: ($i*$basic)* 1rem;
+        }
+    }
+}
+
+@mixin spaceDirection($property:margin, $direction:y, $shortProperty:m, $basic:0.25) {
+
+    @if($direction==y) {
+        @for $i from 1 through 5 {
+            .#{$shortProperty}#{$direction}-#{$i} {
+                #{$property}: ($i*$basic)* 1rem 0;
+            }
+        }
+
+    }@else if($direction==t){
+        
+        @for $i from 1 through 5 {
+            .#{$shortProperty}#{$direction}-#{$i} {
+                #{$property}-top: ($i*$basic)* 1rem;
+            }
+        }
+    }
+    @else if($direction==b){
+        
+        @for $i from 1 through 5 {
+            .#{$shortProperty}#{$direction}-#{$i} {
+                #{$property}-bottom: ($i*$basic)* 1rem;
+            }
+        }
+    }
+    @else if($direction==r){
+        
+        @for $i from 1 through 5 {
+            .#{$shortProperty}#{$direction}-#{$i} {
+                #{$property}-right: ($i*$basic)* 1rem;
+            }
+        }
+    }
+    
+    @else if($direction==l){
+        
+        @for $i from 1 through 5 {
+            .#{$shortProperty}#{$direction}-#{$i} {
+                #{$property}-left: ($i*$basic)* 1rem;
+            }
+        }
+    }
+    @else {
+
+        @for $i from 1 through 5 {
+            .#{$shortProperty}#{$direction}-#{$i} {
+                #{$property}: 0 ($i*$basic)* 1rem;
+            }
+        }
+    }
+}

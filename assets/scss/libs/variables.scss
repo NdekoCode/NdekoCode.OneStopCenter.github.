@@ -1,0 +1,57 @@
+
+@import "mixins.scss";
+:root {
+    --color-title: #4176ea;
+    --color-white: #fff;
+    --color-green: #2ec5b2;
+    --color-dark: #0a0a0a;
+    --color-gray: #565656;
+    --bg-item: #f1f1f1;
+    --gradient-1: linear-gradient(45deg, var(--color-title), #2ec5b2);
+
+    --size-title: 3.5rem;
+    --size-text: 1.5rem;
+
+    --font-primary: 'Poppins', 'Segoe UI', sans-serif;
+    --font-secondary: 'Inter', 'Montserrat', sans-serif;
+    --space-size: 100px;
+}
+$size-container:1300px;
+$size-title:3.5rem;
+$size-text:1.5rem;
+$color-green:#2ec5b2;
+$color-gray:#565656;
+$color-white:#fff;
+$color-title: #4176ea;
+$color-green: #2ec5b2;
+$bg-item:#f1f1f1;
+$space-size:100px;
+
+$gradient-1: gradient(45deg,$color-title,$color-green);
+
+@media only screen and(max-width:720px) {
+    :root {
+
+        --size-title: 3rem;
+    }
+
+    $size-title:3rem;
+}
+
+@media only screen and (max-width:500px) {
+    :root {
+
+        --size-title: 2.5rem;
+    }
+
+    $size-title:2.5rem;
+}
+
+@media only screen and (max-width:350px) {
+    :root {
+
+        --size-title: 2rem;
+    }
+
+    $size-title:2rem;
+}

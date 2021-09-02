@@ -1,0 +1,77 @@
+#infos {
+    background-color: var(--color-white);
+    padding: rem(100) 0;
+    .container {
+        max-width: $size-container + 200px;
+        position: relative;
+        z-index:0;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            width: 550px;
+            height: 550px;
+
+        }
+
+        .title-3 {
+
+            color: $color-white;
+            margin: rem(30) 0 rem(15) 0;
+        }
+
+        &::after {
+
+            background-image: radial-gradient(circle closest-side, var(--color-gray), var(--color-title));
+            border-radius: 50%;
+            top: -150px;
+            right: 5px;
+            opacity: 0.07;
+        }
+
+        &::before {
+            left: 5px;
+            bottom: -75px;
+            background: url('../img/dots.svg') no-repeat left bottom / 50% 50%;
+            opacity: 0.17;
+        }
+    }
+
+    .info-item {
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        color: darken($color-white, 5);
+        cursor: pointer;
+        transition: 0.3s;
+        margin: 1rem;
+
+        &:hover {
+            @extend %shadow-x;
+            transform: translateY(-5px);
+        }
+    }
+}
+
+.info-icon {
+    span {
+        font-size: 3rem;
+    }
+}
+
+.title-3 {
+    font-size: 2rem;
+    margin:1rem 0;
+}
+
+@media only screen and(max-width:550px) {
+    #infos {
+        .container{
+            &::after,&::before{
+                display:none;
+            }
+        }
+    }
+}

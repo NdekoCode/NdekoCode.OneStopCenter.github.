@@ -1,0 +1,189 @@
+#about {
+    background: url('../img/medecin-lol.jpg') no-repeat left/ 55%;
+    background-color: var(--bg-item);
+    overflow: hidden;
+    margin: rem(100) 0;
+    padding: rem(75) 0;
+
+
+    .container {
+        float: right;
+        width: 65%;
+        padding: rem(50) 1rem;
+        max-width: $size-container + 200px;
+        background-color: var(--bg-item);
+        padding: rem(50);
+    }
+
+    .block {    
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    .title-3 {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    .title-4 {
+        margin-top: 0.5rem;
+    }
+
+    p {
+        color: lighten($color-gray, 10);
+        font-size: rem(14);
+        line-height: rem(25);
+        text-align: justify;
+    }
+
+    .block-right {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        min-width: 380px;
+
+        .block-right-item {
+
+            * {
+                color: inherit;
+            }
+
+            &.icon span {
+                color: #fff;
+                transition: 0.3s 0.3s ease-in-out;
+                font-size: 2rem;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    // flex-wrap:wrap;
+}
+
+.block-left {
+    max-width: 700px;
+}
+
+.block-left,
+.block-right {
+    flex-basis: 45%;
+    width: 45%;
+}
+
+.block-right-item {
+    color: var(--color-dark);
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 rem(20);
+    background-color: var(--bg-item);
+    box-shadow: inset 9.91px 9.91px 15px #e2e4e8,
+        inset -9.91px -9.91px 15px #fafcff;
+    opacity: 0.8;
+    transition: 0.3s 0.3s ease-in;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--bg-item);
+        border-radius: 100%;
+        box-shadow: inset 0 0 0 #e2e4e8, inset -0 0 0 #fafcff,
+            9.91px 9.91px 15px #e2e4e8, -9.91px -9.91px 15px #fafcff;
+        opacity: 1;
+        transition: 0.3s ease-in;
+
+    }
+
+    &:hover span {
+        transform: rotate(360deg);
+        transition: 0.3s ease-in-out;
+        color: #29b09f !important;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    #about {
+
+        background-size: 100%;
+
+        .container {
+            padding: 0.125rem;
+        }
+    }
+
+    .block {
+        flex-wrap: wrap;
+    }
+
+    .block-left,
+    .block-right {
+        width: 100%;
+        flex-basis: 100%;
+        padding: 2rem;
+    }
+
+}
+
+@media only screen and(max-width:750px) {
+    
+    .circle,
+    .dots {
+        &::before,&::after{
+            width:250px!important;
+            height:250px!important;
+            
+        }
+    }
+}
+@media only screen and(max-width:650px) {
+    #about {
+        padding: rem(100) rem(40);
+
+        .container {
+            width: 100%;
+            float: none;
+        }
+    }
+
+    .block-left {
+        text-align: justify;
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .block-right-item {
+        margin: 1rem;
+    }
+    .circle,
+    .dots {
+        &::before,&::after{
+            display:none;
+            
+        }
+    }
+
+}
+
+@media only screen and(max-width:550px) {
+    #about {
+        background-image: none;
+        margin: rem(25) 0;
+        padding: rem(50) rem(25);
+
+        .block-right {
+            min-width: auto;
+            padding: 0;
+        }
+
+        .block-left {
+            padding: 0;
+        }
+    }
+}
