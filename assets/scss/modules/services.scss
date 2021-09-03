@@ -120,6 +120,13 @@
         min-width: 350px;
         width:350px;
     }
+    
+    #services {
+        .container.dots::after{
+        left: 400px;
+        } 
+
+    }    
 }
 @media only screen and (max-width:500px) {
     .card {

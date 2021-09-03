@@ -7,6 +7,7 @@
 
     .container-centered {
         flex-wrap: nowrap;
+        align-items: stretch;
     }
 
     .title-content {
@@ -19,6 +20,7 @@
     }
 
     .info-item {
+        position:relative;
         padding: 1rem 0 0 0;
         flex-basis:30%;
         border-radius:0;
@@ -51,6 +53,8 @@
 
     .infos-details {
         margin-top: 1rem;
+        position:absolute;
+        bottom:0;
         background-color: var(--color-white);
         padding: 1rem 2rem;
         width: 85%;
