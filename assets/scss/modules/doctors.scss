@@ -22,7 +22,7 @@
         padding: 1rem 0 0 0;
         flex-basis:30%;
         border-radius:0;
-        transition:border-radius 0.3s 0.2s;
+        transition:border-radius 0.3s 0.2s,background 0.3s;
         img{
             max-height:425px;
             width:auto;
@@ -41,6 +41,7 @@
 
         &:hover {
             border-radius: rem(25);
+            @include gradient(90deg, $color-title, $color-green);
             .infos-details {
 
                 width: 100%;

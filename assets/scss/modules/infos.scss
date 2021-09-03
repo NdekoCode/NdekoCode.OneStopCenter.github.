@@ -49,7 +49,7 @@
         margin: 1rem;
 
         &:hover {
-            @extend %shadow-x;
+            @extend %shadow-x !optional;
             transform: translateY(-5px);
         }
     }
