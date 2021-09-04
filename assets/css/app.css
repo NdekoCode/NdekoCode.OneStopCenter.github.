@@ -1700,5 +1700,13 @@ a:hover {
   }
 }
 /* ==  =================== Fin Facts ===============*/
+/* ==  =================== Footer ===============*/
+.footer {
+  margin-top: 2rem;
+  background-color: var(--color-white);
+  border-top: 2px solid #e2e2e2;
+}
+
+/* ==  =================== Fin Footer ===============*/
 
 /*# sourceMappingURL=app.css.map */
