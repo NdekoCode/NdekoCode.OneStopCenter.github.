@@ -1706,6 +1706,12 @@ a:hover {
   background-color: var(--color-white);
   border-top: 2px solid #e2e2e2;
 }
+.footer a {
+  text-decoration: none;
+}
+.footer ul, .footer ol {
+  list-style: none;
+}
 
 /* ==  =================== Fin Footer ===============*/
 

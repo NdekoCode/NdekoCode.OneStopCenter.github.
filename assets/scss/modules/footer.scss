@@ -2,4 +2,11 @@
     margin-top:2rem;
     background-color: var(--color-white);
     border-top:2px solid lighten($color-gray,55);
+    a{
+        text-decoration: none;
+
+    }
+    ul,ol{
+        list-style: none;
+    }
 }
