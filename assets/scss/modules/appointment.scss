@@ -1,4 +1,4 @@
-#appointment {
+#appointment,#contact {
     padding: rem(100) rem(30);
     background-color: lighten($bg-item, 1);
 
@@ -49,75 +49,6 @@
 
     }
 
-    .form-input {
-
-        margin: rem(10) 0;
-    }
-
-    .form-input,
-    .form-submit {
-        display: inline-block;
-    }
-
-    .form-submit {
-        width: 100%;
-        min-height: 55px;
-        margin-top: 1rem;
-        text-align: right;
-
-        button {
-            max-width: 192px;
-            width: 100%;
-            height: 100%;
-            border: none;
-            border-radius: rem(10);
-            background-color: var(--color-green);
-            color: var(--color-white);
-            transition: 0.3s;
-            font-size: 1.1em;
-
-            &:hover {
-                background-color: darken($color-green, 10);
-            }
-        }
-
-    }
-
-    .form {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .input {
-        width: 100%;
-        padding: rem(10);
-        padding-left: rem(5);
-        outline: none;
-        border: none;
-        border-bottom: 1.5px solid lighten($color-gray, 45);
-        transition: 0.3s;
-
-        &:hover {
-            border-bottom-color: var(--color-green);
-            transition: 0.3s 0.3s;
-        }
-    }
-
-    .text-input {
-        width: 45%;
-
-    }
-
-    .number-input,
-    .date-input {
-
-        width: 40%;
-
-        &.time {
-            width: 100%;
-        }
-    }
 }
 
 .block-left img,
@@ -127,9 +58,92 @@
     display: block;
 }
 
+.form-input {
+
+    margin: rem(10) 0;
+}
+
+.form-input,
+.form-submit {
+    display: inline-block;
+}
+
+.form-submit {
+    width: 100%;
+    min-height: 55px;
+    margin-top: 1rem;
+    text-align: right;
+
+    button {
+        max-width: 192px;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: rem(10);
+        background-color: var(--color-green);
+        color: var(--color-white);
+        transition: 0.3s;
+        font-size: 1.1em;
+
+        &:hover {
+            background-color: darken($color-green, 10);
+        }
+    }
+
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input,.textarea {
+    width: 100%;
+    padding: rem(10);
+    padding-left: rem(5);
+    outline: none;
+    border: none;
+    border-bottom: 1.5px solid lighten($color-gray, 45);
+    transition: 0.3s;
+
+    &:hover {
+        border-bottom-color: var(--color-green);
+        transition: 0.3s 0.3s;
+    }
+}
+.textarea{
+    margin-top:1rem;
+    border-left: 1.5px solid lighten($color-gray, 45);
+    font-family: inherit;
+    border-bottom-left-radius: rem(5);
+    border-bottom-right-radius: rem(5);
+
+    &:hover {
+        border-left-color: var(--color-green);
+        transition: 0.3s 0.3s;
+    }
+}
+.text-area,.form-area{
+    width: 100%;
+}
+.text-input {
+    width: 45%;
+
+}
+
+.number-input,
+.date-input {
+
+    width: 40%;
+
+    &.time {
+        width: 100%;
+    }
+}
 @media only screen and(max-width:991px) {
 
-    #appointment {
+    #appointment,#contact {
         padding: rem(50) rem(20);
 
         .block {
@@ -156,7 +170,7 @@
 
 @media only screen and(max-width:750px) {
 
-    #appointment {
+    #appointment,#contact {
         .form-input {
             width: 48%;
         }
@@ -179,7 +193,7 @@
 }
 
 @media only screen and(max-width:650px) {
-    #appointment {
+    #appointment ,#contact{
 
         .block {
             flex-wrap: wrap;
@@ -202,7 +216,7 @@
 }
 
 @media only screen and(max-width:550px) {
-    #appointment {
+    #appointment,#contact {
         .block-left {
             flex-basis: 100%;
         }

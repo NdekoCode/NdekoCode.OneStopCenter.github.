@@ -1,0 +1,107 @@
+#contact{
+    padding:2rem;
+    .block{
+        background-color: var(--color-white);
+    }
+
+    .container{
+        max-width: 1200px;
+        padding-right:0;
+    }
+    .block-right{
+        order:initial;
+        flex-basis: 80%;
+        width:55%;
+        min-height:auto;
+        background-image: none;
+        padding: rem(25);
+        border-radius: none;
+        
+        &:hover {
+
+            border-radius: none;
+        }
+
+    }
+    .number-input, .date-input {
+        width: 45%;
+    }
+    .block-left{
+        order:1;
+        width: 20%;
+        min-height: 540px;
+        background-image: var(--gradient-1);
+        border-top-left-radius: rem(50);
+        border-bottom-left-radius: rem(50);
+        transition: border-radius 0.3s;
+        &:hover {
+
+            transition: border-radius 0.3s;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+    .title-6{
+        color:var(--color-white);
+    }
+    .form-submit {
+        text-align: left;
+        .btn{
+            padding:0.6rem 0.8rem;
+            border-radius: rem(4);
+        }
+    }
+    .textarea{
+        resize:none;
+        min-height: rem(100);
+    }
+}
+@media only screen and (max-width: 991px){
+    #contact {
+        .block-right{
+            height: auto;
+        }
+        
+        .block-left{
+            flex-basis: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width:750px){
+    #contact {
+        
+    .title-6{
+        margin-bottom:2rem;
+    }
+    .block-right{
+        padding:0;
+    }
+    }
+}
+@media only screen and (max-width:650px){
+    #contact{
+        .date-input,.number-input{
+            width:100%;
+        }
+        .block {
+            flex-wrap: wrap;
+        }
+        
+        .block-left{
+            order:-1;
+            min-height: auto;
+            flex-basis: 100%;
+            width: 100%;
+            height:max-content;
+            background-image: none;
+        }
+        
+    .title-6{
+        color:var(--color-title);
+        margin-bottom:1rem;
+    }
+    }
+    
+
+}

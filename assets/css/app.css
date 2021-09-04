@@ -510,17 +510,10 @@ a:hover {
 
 /* ==  =================== Fin Regle de base ===============*/
 /* ==  =================== Banniere ===============*/
-@media only screen and (max-width: 991px) {
-  #home {
-    min-height: 100vh;
-  }
-  #home .banner {
-    height: 50vh;
-  }
-}
 #home {
   background-color: var(--color-white);
   position: relative;
+  height: 100vh;
 }
 #home::before {
   content: "";
@@ -538,9 +531,9 @@ a:hover {
   height: 100%;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: flex-start;
-  background: url("../img/Bg.png") no-repeat right -300px center/cover;
+  align-items: flex-end;
+  background: url("../img/Bg.png") no-repeat right -70% top 35%/85%;
   padding: 6.25rem 0;
 }
 .banner a {
@@ -565,9 +558,8 @@ a:hover {
   display: block;
 }
 .banner .baseline {
-  width: 60%;
+  width: 55%;
   margin-left: 4rem;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 .banner .baseline p {
   color: var(--color-dark);
@@ -586,30 +578,58 @@ a:hover {
 .banner .baseline-name {
   max-width: 90%;
   word-wrap: break-word;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  background-image: var(--gradient-1);
 }
 .banner p {
   font-size: 1.1rem;
   color: var(--color-gray);
 }
 
-@media only screen and (min-width: 991px) {
+@media only screen and (max-width: 991px) {
+  :root {
+    --size-title:3rem;
+  }
+
+  #home {
+    min-height: 100vh;
+  }
   #home .banner {
-    min-height: 50vh;
+    height: inherit;
+    padding: 4rem 0;
+    min-height: auto;
+    background-position: right -150% top 100%;
+  }
+}
+@media only screen and (max-width: 991px) and (max-width: 850px) {
+  :root {
+    --size-title:2.8rem;
+  }
+
+  #home {
+    min-height: inherit;
+    height: inherit;
+  }
+  #home .banner {
+    background-position: right -150% top 75%;
   }
 }
 @media only screen and (max-width: 991px) {
-  #home .banner {
-    padding: 4rem 0;
-    min-height: auto;
-    height: auto;
-  }
-
   h3,
 .baseline-name {
     font-size: 3em;
   }
 }
 @media only screen and (max-width: 750px) {
+  :root {
+    --size-title:2.5rem;
+  }
+
   #home .banner-img {
     display: initial;
   }
@@ -620,6 +640,8 @@ a:hover {
 
   .banner {
     flex-direction: column;
+    justify-content: initial;
+    align-items: center;
     background: none;
   }
   .banner h3,
@@ -641,6 +663,11 @@ a:hover {
 
   .block {
     justify-content: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #home .banner {
+    padding-left: 0;
   }
 }
 /* ==  =================== Fin Banniere ===============*/
@@ -984,19 +1011,19 @@ a:hover {
 }
 /* ==  =================== Fin About ===============*/
 /* ==  =================== Appointment(Rendez-vous )===============*/
-#appointment {
+#appointment, #contact {
   padding: 6.25rem 1.875rem;
   background-color: #f4f4f4;
 }
-#appointment .container {
+#appointment .container, #contact .container {
   max-width: 1100px;
 }
-#appointment .title-3 {
+#appointment .title-3, #contact .title-3 {
   font-size: 2em;
   color: inherit;
   margin-bottom: 3.125rem;
 }
-#appointment .block {
+#appointment .block, #contact .block {
   padding: 0 3.125rem;
   padding-left: 0;
   background-color: var(--color-white);
@@ -1006,12 +1033,12 @@ a:hover {
   box-shadow: 0 10px 50px -10px #d6d6d6;
   flex-wrap: nowrap;
 }
-#appointment .block-left {
+#appointment .block-left, #contact .block-left {
   flex-basis: 60%;
   width: 55%;
   padding-left: 1.5625rem;
 }
-#appointment .block-right {
+#appointment .block-right, #contact .block-right {
   width: 30%;
   min-height: 540px;
   order: -1;
@@ -1022,24 +1049,34 @@ a:hover {
   transition: border-radius 0.3s;
   align-items: flex-end;
 }
-#appointment .block-right:hover {
+#appointment .block-right:hover, #contact .block-right:hover {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-#appointment .form-input {
+
+.block-left img,
+.block-right img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.form-input {
   margin: 0.625rem 0;
 }
-#appointment .form-input,
-#appointment .form-submit {
+
+.form-input,
+.form-submit {
   display: inline-block;
 }
-#appointment .form-submit {
+
+.form-submit {
   width: 100%;
   min-height: 55px;
   margin-top: 1rem;
   text-align: right;
 }
-#appointment .form-submit button {
+.form-submit button {
   max-width: 192px;
   width: 100%;
   height: 100%;
@@ -1050,15 +1087,17 @@ a:hover {
   transition: 0.3s;
   font-size: 1.1em;
 }
-#appointment .form-submit button:hover {
+.form-submit button:hover {
   background-color: #249c8d;
 }
-#appointment .form {
+
+.form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-#appointment .input {
+
+.input, .textarea {
   width: 100%;
   padding: 0.625rem;
   padding-left: 0.3125rem;
@@ -1067,85 +1106,96 @@ a:hover {
   border-bottom: 1.5px solid #c9c9c9;
   transition: 0.3s;
 }
-#appointment .input:hover {
+.input:hover, .textarea:hover {
   border-bottom-color: var(--color-green);
   transition: 0.3s 0.3s;
 }
-#appointment .text-input {
-  width: 45%;
+
+.textarea {
+  margin-top: 1rem;
+  border-left: 1.5px solid #c9c9c9;
+  font-family: inherit;
+  border-bottom-left-radius: 0.3125rem;
+  border-bottom-right-radius: 0.3125rem;
 }
-#appointment .number-input,
-#appointment .date-input {
-  width: 40%;
+.textarea:hover {
+  border-left-color: var(--color-green);
+  transition: 0.3s 0.3s;
 }
-#appointment .number-input.time,
-#appointment .date-input.time {
+
+.text-area, .form-area {
   width: 100%;
 }
 
-.block-left img,
-.block-right img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+.text-input {
+  width: 45%;
+}
+
+.number-input,
+.date-input {
+  width: 40%;
+}
+.number-input.time,
+.date-input.time {
+  width: 100%;
 }
 
 @media only screen and (max-width: 991px) {
-  #appointment {
+  #appointment, #contact {
     padding: 3.125rem 1.25rem;
   }
-  #appointment .block {
+  #appointment .block, #contact .block {
     padding: 0;
     height: auto;
     justify-content: center;
   }
-  #appointment .block-left {
+  #appointment .block-left, #contact .block-left {
     flex-basis: 80%;
   }
-  #appointment .block-right {
+  #appointment .block-right, #contact .block-right {
     border-top-right-radius: 0;
     height: 540px;
     min-height: auto;
   }
 }
 @media only screen and (max-width: 750px) {
-  #appointment .form-input {
+  #appointment .form-input, #contact .form-input {
     width: 48%;
   }
-  #appointment .title-3 {
+  #appointment .title-3, #contact .title-3 {
     margin: 0;
     margin-bottom: 1.25rem;
   }
-  #appointment .block-left {
+  #appointment .block-left, #contact .block-left {
     flex-basis: 100%;
   }
-  #appointment .block-right {
+  #appointment .block-right, #contact .block-right {
     border-top-right-radius: 3.125rem;
     height: 350px;
   }
 }
 @media only screen and (max-width: 650px) {
-  #appointment .block {
+  #appointment .block, #contact .block {
     flex-wrap: wrap;
   }
-  #appointment .block-right {
+  #appointment .block-right, #contact .block-right {
     border-top-right-radius: 0;
   }
-  #appointment .block-right img {
+  #appointment .block-right img, #contact .block-right img {
     max-width: 50%;
   }
-  #appointment .form-input {
+  #appointment .form-input, #contact .form-input {
     width: 100%;
   }
-  #appointment .block-left {
+  #appointment .block-left, #contact .block-left {
     flex-basis: 80%;
   }
 }
 @media only screen and (max-width: 550px) {
-  #appointment .block-left {
+  #appointment .block-left, #contact .block-left {
     flex-basis: 100%;
   }
-  #appointment .block-right {
+  #appointment .block-right, #contact .block-right {
     height: auto;
   }
 }
@@ -1417,5 +1467,97 @@ a:hover {
   }
 }
 /* ==  =================== Fin Blog ===============*/
+/* ==  =================== Contact ===============*/
+#contact {
+  padding: 2rem;
+}
+#contact .block {
+  background-color: var(--color-white);
+}
+#contact .container {
+  max-width: 1200px;
+  padding-right: 0;
+}
+#contact .block-right {
+  order: initial;
+  flex-basis: 80%;
+  width: 55%;
+  min-height: auto;
+  background-image: none;
+  padding: 1.5625rem;
+  border-radius: none;
+}
+#contact .block-right:hover {
+  border-radius: none;
+}
+#contact .number-input, #contact .date-input {
+  width: 45%;
+}
+#contact .block-left {
+  order: 1;
+  width: 20%;
+  min-height: 540px;
+  background-image: var(--gradient-1);
+  border-top-left-radius: 3.125rem;
+  border-bottom-left-radius: 3.125rem;
+  transition: border-radius 0.3s;
+}
+#contact .block-left:hover {
+  transition: border-radius 0.3s;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#contact .title-6 {
+  color: var(--color-white);
+}
+#contact .form-submit {
+  text-align: left;
+}
+#contact .form-submit .btn {
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.25rem;
+}
+#contact .textarea {
+  resize: none;
+  min-height: 6.25rem;
+}
+
+@media only screen and (max-width: 991px) {
+  #contact .block-right {
+    height: auto;
+  }
+  #contact .block-left {
+    flex-basis: 70%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #contact .title-6 {
+    margin-bottom: 2rem;
+  }
+  #contact .block-right {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #contact .date-input, #contact .number-input {
+    width: 100%;
+  }
+  #contact .block {
+    flex-wrap: wrap;
+  }
+  #contact .block-left {
+    order: -1;
+    min-height: auto;
+    flex-basis: 100%;
+    width: 100%;
+    height: max-content;
+    background-image: none;
+  }
+  #contact .title-6 {
+    color: var(--color-title);
+    margin-bottom: 1rem;
+  }
+}
+/* ==  =================== Fin Contact ===============*/
 
 /*# sourceMappingURL=app.css.map */
