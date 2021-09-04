@@ -1,12 +1,15 @@
 /* ================== Importation des librairies ========*/
 :root {
-  --color-title: #4176ea;
+  --color:#613bdb;
+  --color-title: #613bdb;
+  --color-t: #4176ea;
   --color-white: #fff;
   --color-green: #2ec5b2;
+  --color2: #2ec5b2;
   --color-dark: #0a0a0a;
   --color-gray: #565656;
   --bg-item: #f1f1f1;
-  --gradient-1: linear-gradient(45deg, var(--color-title), #2ec5b2);
+  --gradient-1: linear-gradient(45deg, var(--color-title), var(--color-green));
   --size-title: 3.5rem;
   --size-text: 1.5rem;
   --font-primary: "Poppins", "Segoe UI", sans-serif;
@@ -95,11 +98,15 @@
 }
 
 .title-4 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+}
+
+.title-5 {
+  font-size: 1.4rem;
 }
 
 .title-6 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .dots {
@@ -129,7 +136,6 @@
 
 .info-item {
   border-radius: 0.625rem;
-  background-image: linear-gradient(45deg, #4176ea, #2ec5b2);
   cursor: pointer;
   margin: 0.5rem;
 }
@@ -137,6 +143,26 @@
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.gradient-1 {
+  background-image: linear-gradient(45deg, #613bdb, #2ec5b2);
+}
+
+.gradient-2 {
+  background-image: linear-gradient(-45deg, #2ec5b2, #613bdb);
+}
+
+.gradient-3 {
+  background-image: linear-gradient(-90deg, #613bdb, #2ec5b2);
+}
+
+.gradient-4 {
+  background-image: linear-gradient(90deg, #2ec5b2, #613bdb);
+}
+
+.gradient-5 {
+  background-image: linear-gradient(90deg, #613bdb, #2ec5b2);
 }
 
 .card {
@@ -576,7 +602,7 @@ a:hover {
   margin: 1rem 0;
 }
 .banner .baseline-name {
-  max-width: 90%;
+  max-width: 85%;
   word-wrap: break-word;
   background-clip: text;
   -moz-background-clip: text;
@@ -584,7 +610,10 @@ a:hover {
   background-size: cover;
   background-position: center;
   color: transparent;
-  background-image: var(--gradient-1);
+  background-image: linear-gradient(45deg, #2ec5b2, #613bdb);
+}
+.banner .baseline-name:hover {
+  background-image: linear-gradient(-75deg, #2ec5b2, #613bdb);
 }
 .banner p {
   font-size: 1.1rem;
@@ -604,6 +633,9 @@ a:hover {
     padding: 4rem 0;
     min-height: auto;
     background-position: right -150% top 100%;
+  }
+  #home .banner .baseline-name {
+    max-width: 90%;
   }
 }
 @media only screen and (max-width: 991px) and (max-width: 850px) {
@@ -648,6 +680,8 @@ a:hover {
 .banner .baseline-name {
     font-size: 2em;
     margin: 1rem 0;
+    max-width: 100%;
+    word-break: normal;
   }
   .banner .baseline {
     margin-left: 0;
@@ -668,6 +702,9 @@ a:hover {
 @media only screen and (max-width: 450px) {
   #home .banner {
     padding-left: 0;
+  }
+  #home .banner .baseline-link {
+    padding: 0.8rem 0.8rem;
   }
 }
 /* ==  =================== Fin Banniere ===============*/
@@ -771,7 +808,7 @@ a:hover {
   bottom: 0;
   border-radius: 3.125rem;
   transition: 0.3s;
-  background-image: linear-gradient(45deg, #4176ea, #2ec5b2);
+  background-image: linear-gradient(45deg, #613bdb, #2ec5b2);
 }
 #services .card::before {
   top: 0;
@@ -780,7 +817,7 @@ a:hover {
   bottom: 0;
   border-radius: 3.125rem;
   transition: 0.3s;
-  background-image: linear-gradient(45deg, #4176ea, #2ec5b2);
+  background-image: linear-gradient(45deg, #613bdb, #2ec5b2);
 }
 #services .card:hover::before {
   right: 100%;
@@ -1042,7 +1079,6 @@ a:hover {
   width: 30%;
   min-height: 540px;
   order: -1;
-  background-image: var(--gradient-1);
   padding: 0;
   border-top-right-radius: 3.125rem;
   border-bottom-right-radius: 3.125rem;
@@ -1334,14 +1370,14 @@ a:hover {
   width: auto;
 }
 #doctors .info-item:nth-child(1) {
-  background-image: linear-gradient(325deg, #4176ea, #2ec5b2);
+  background-image: linear-gradient(325deg, #613bdb, #2ec5b2);
 }
 #doctors .info-item:nth-child(2) {
-  background-image: linear-gradient(0deg, #4176ea, #2ec5b2);
+  background-image: linear-gradient(0deg, #613bdb, #2ec5b2);
 }
 #doctors .info-item:hover {
   border-radius: 1.5625rem;
-  background-image: linear-gradient(90deg, #4176ea, #2ec5b2);
+  background-image: linear-gradient(90deg, #613bdb, #2ec5b2);
 }
 #doctors .info-item:hover .infos-details {
   width: 100%;
@@ -1559,5 +1595,110 @@ a:hover {
   }
 }
 /* ==  =================== Fin Contact ===============*/
+/* ==  =================== Facts ===============*/
+#facts {
+  background-color: var(--bg-item);
+}
+#facts .block {
+  padding: 1.875rem 0.625rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+#facts .container-centered {
+  flex-wrap: nowrap;
+  max-width: 600px;
+  background-color: var(--color-white);
+  border-radius: 0.3125rem;
+  box-shadow: 0 10px 35px -12px rgba(0, 0, 0, 0.3);
+}
+#facts .container-centered .title-5 {
+  font-weight: 500;
+}
+#facts .fact-container {
+  margin: 0.625rem;
+  margin: 1rem;
+  box-shadow: 0 10px 35px transparent;
+}
+#facts .fact-container p {
+  font-size: 0.9375rem;
+}
+#facts .fact-container:hover {
+  box-shadow: 0 10px 35px -12px rgba(0, 0, 0, 0.3);
+}
+#facts .fact-container img {
+  border-radius: 50%;
+}
+#facts .fact-container .facts {
+  margin-top: 1rem;
+}
+#facts .fact-container .block-img {
+  margin-right: 0.5rem;
+}
+#facts .block-left,
+#facts .block-right {
+  width: 15.625rem;
+  height: 15.625rem;
+  text-align: center;
+  margin: 0.625rem 1.25rem;
+  box-shadow: 0 10px 35px -12px rgba(0, 0, 0, 0.3);
+}
+#facts .block-left,
+#facts .block-right, #facts .fact-container {
+  background-color: var(--color-white);
+  padding: 1.5625rem;
+  border-radius: 0.625rem;
+  transition: 0.3s;
+}
+#facts .block-left:hover,
+#facts .block-right:hover, #facts .fact-container:hover {
+  background-color: var(--color-title);
+  color: Var(--color-white);
+  transform: translateY(-0.625rem);
+}
+#facts .block-left:hover *,
+#facts .block-right:hover *, #facts .fact-container:hover * {
+  color: inherit;
+}
+#facts .title-3,
+#facts .title-2,
+#facts .title-4 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+  #facts .block {
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #facts .block-left,
+#facts .block-right {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #facts .container-centered {
+    flex-wrap: wrap;
+  }
+  #facts .fact-container {
+    border: 0.5px solid #f1f1f1;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #facts .block-left,
+#facts .block-right {
+    width: 9.375rem;
+    height: 9.375rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  #facts .block {
+    padding: 1.5625rem;
+    flex-wrap: wrap;
+  }
+}
+/* ==  =================== Fin Facts ===============*/
 
 /*# sourceMappingURL=app.css.map */

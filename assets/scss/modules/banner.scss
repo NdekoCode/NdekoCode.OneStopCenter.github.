@@ -77,7 +77,7 @@
     }
 
     .baseline-name {
-        max-width: 90%;
+        max-width: 85%;
         word-wrap: break-word;
         background-clip: text;
         -moz-background-clip: text;
@@ -85,7 +85,11 @@
         background-size:cover;
         background-position: center;
         color:transparent;
-        background-image: var(--gradient-1);
+        @include gradient(45deg,$color-green,$color-title);
+        &:hover{
+            @include gradient(-75deg,$color-green,$color-title);
+
+        }
     }
 
     p {
@@ -107,6 +111,10 @@
             padding: 4rem 0;
             min-height: auto;
             background-position:right -150% top 100%;
+            
+    .baseline-name {
+        max-width: 90%;
+    }
         }
     }
 
@@ -158,6 +166,8 @@
         .baseline-name {
             font-size: 2em;
             margin: 1rem 0;
+            max-width: 100%;
+            word-break: normal;
         }
 
         .baseline {
@@ -185,6 +195,9 @@
     #home{
         .banner{
             padding-left:0;
+            .baseline-link{
+                padding: 0.8rem 0.8rem;
+            }
         }
     }
 }

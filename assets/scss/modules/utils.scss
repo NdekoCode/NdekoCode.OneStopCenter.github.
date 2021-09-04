@@ -77,10 +77,13 @@
     font-size:2rem;
 }
 .title-4{
-    font-size:1.8rem;
+    font-size:1.6rem;
+}
+.title-5{
+    font-size:1.4rem;
 }
 .title-6{
-    font-size:1.5rem;
+    font-size:1.2rem;
 }
 .dots {
     position: relative;
@@ -139,13 +142,31 @@
 
 .info-item {
     border-radius: rem(10);
-    @include gradient(45deg,$color-title,$color-green);
     cursor: pointer;
     margin: 0.5rem;
     @include img_responsive;
 }
+.gradient-1{
+    @include gradient(45deg,$color-title,$color-green);
 
+}
+.gradient-2{
+    @include gradient(-45deg,$color-green,$color-title);
 
+}
+.gradient-3{
+    @include gradient(-90deg,$color-title,$color-green);
+
+}
+.gradient-4{
+    @include gradient(90deg,$color-green,$color-title);
+
+}
+
+.gradient-5{
+    @include gradient(90deg,$color-title,$color-green);
+
+}
 .card {
     max-width: 500px;
     min-height: 200px;

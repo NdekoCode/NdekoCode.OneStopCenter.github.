@@ -1,0 +1,124 @@
+#facts {
+    background-color: var(--bg-item);
+
+    .block {
+        padding: rem(30) rem(10);
+        justify-content: center;
+        align-items: center;
+        max-width: 600px;
+    }
+    .container-centered{
+        flex-wrap: nowrap;
+        max-width: 600px;
+        background-color: var(--color-white);
+        border-radius: rem(5);
+        .title-5{
+            font-weight: 500;
+        }
+        box-shadow: 0 10px 35px -12px rgba(0, 0, 0, 0.3);
+    }
+    .fact-container{
+        margin: rem(10);
+        margin:1rem;
+        p{
+            font-size:rem(15);
+        }
+        
+        box-shadow: 0 10px 35px transparent;
+        &:hover{
+            
+        box-shadow: 0 10px 35px -12px rgba(0, 0, 0, 0.3);
+        }
+        img{
+            border-radius: 50%;
+        }
+        .facts{
+            margin-top:1rem;
+        }
+        .block-img{
+            margin-right:0.5rem;
+        }
+    }
+    
+    .block-left,
+    .block-right{
+        width: rem(250);
+        height: rem(250);
+        text-align: center;
+        margin: rem(10) rem(20);
+        box-shadow: 0 10px 35px -12px rgba(0, 0, 0, 0.3);
+
+    }
+    .block-left,
+    .block-right ,.fact-container{
+        background-color: var(--color-white);
+        padding: rem(25);
+        border-radius: rem(10);
+        transition: 0.3s;
+
+        &:hover {
+            background-color: var(--color-title);
+            color: Var(--color-white);
+            transform: translateY(rem(-10));
+
+            * {
+                color: inherit;
+            }
+        }
+    }
+
+    .title-3,
+    .title-2,
+    .title-4 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #facts {
+
+        .block {
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    #facts {
+    .block-left,
+    .block-right {
+            width:rem(200);
+            height: rem(200);
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #facts {
+        .container-centered{
+            flex-wrap: wrap;
+        }
+        .fact-container{
+            border:0.5px solid $bg-item;
+        }
+}
+}
+@media only screen and (max-width: 500px) {
+    #facts {
+    .block-left,
+    .block-right {
+            width: rem(150);
+            height: rem(150);
+        }
+    }
+}
+@media only screen and (max-width: 350px) {
+    #facts {
+        .block{
+            padding:rem(25);
+            flex-wrap:wrap;
+            
+        }
+    }
+}
