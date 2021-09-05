@@ -221,3 +221,8 @@ a.blog-title{
 .text-center{
     text-align:center;
 }
+.logo{
+img{
+    @include img_responsive;
+}
+}

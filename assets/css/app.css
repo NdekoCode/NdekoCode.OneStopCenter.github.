@@ -219,6 +219,12 @@ a.blog-title:hover::after {
   text-align: center;
 }
 
+.logo img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ==  =================== Regle de base ===============*/
 @font-face {
   font-family: "Poppins";
@@ -1702,6 +1708,10 @@ a:hover {
 /* ==  =================== Fin Facts ===============*/
 /* ==  =================== Footer ===============*/
 .footer {
+  padding: 3.125rem 0;
+  padding-bottom: 0;
+  color: #636363;
+  background: url(../img/footer-agency.png) no-repeat bottom -100px center/cover;
   margin-top: 2rem;
   background-color: var(--color-white);
   border-top: 2px solid #e2e2e2;
@@ -1709,10 +1719,78 @@ a:hover {
 .footer a {
   text-decoration: none;
 }
+.footer .container-centered {
+  justify-content: space-between;
+  align-items: stretch;
+}
 .footer ul, .footer ol {
   list-style: none;
 }
+.footer ul li, .footer ol li {
+  font-weight: 300;
+  margin-bottom: 0.4rem;
+}
+.footer ul a, .footer ol a {
+  position: relative;
+}
+.footer ul a::after, .footer ol a::after {
+  height: 1px;
+}
+.footer a {
+  position: relative;
+}
+.footer a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #613bdb;
+  transform: scale(0);
+  transition: 0.3s;
+}
+.footer a:hover {
+  color: #613bdb;
+}
+.footer a:hover::after {
+  transform: scale(1);
+}
+.footer .title-3 {
+  font-size: 1.5rem;
+}
+.footer .logo img {
+  width: 40px;
+}
+.footer .footer-desc, .footer .footer-infos {
+  margin: 0.5rem 1rem;
+}
+.footer .footer-infos {
+  margin-bottom: 2rem;
+}
+.footer .copyright {
+  text-align: center;
+  background-color: #7c7c7c;
+  color: var(--bg-item);
+  padding: 1rem;
+  font-weight: 300;
+}
 
+@media only screen and (max-width: 400px) {
+  .footer {
+    background-image: none;
+  }
+  .footer .container-centered {
+    justify-content: center;
+  }
+  .footer .footer-desc, .footer .footer-infos {
+    text-align: center;
+  }
+  .footer .title-3, .footer .title2 {
+    text-align: center;
+  }
+}
 /* ==  =================== Fin Footer ===============*/
 
 /*# sourceMappingURL=app.css.map */

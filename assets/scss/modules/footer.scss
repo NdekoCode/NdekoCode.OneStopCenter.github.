@@ -1,4 +1,8 @@
 .footer{
+    padding:rem(50) 0;
+    padding-bottom:0;
+    color:lighten($color-gray,5);
+    background: url(../img/footer-agency.png) no-repeat bottom -100px center /cover;
     margin-top:2rem;
     background-color: var(--color-white);
     border-top:2px solid lighten($color-gray,55);
@@ -6,7 +10,89 @@
         text-decoration: none;
 
     }
+    .container-centered{
+        justify-content: space-between;
+        align-items: stretch;
+    }
     ul,ol{
         list-style: none;
+        li{
+            font-weight:300;
+            margin-bottom:0.4rem;
+
+        }
+        
+    
+        a{
+            position:relative;
+            &::after{
+                height:1px;
+            }
+        }
     }
-}
+    
+        a{
+            position:relative;
+            &::after{
+                content:'';
+                position:absolute;
+                bottom:0;
+                left:0;
+                right:0;
+                width: 100%;
+                height:4px;
+                background-color: $color-title;
+                transform:scale(0);
+                transition: 0.3s;
+                
+            }
+            &:hover{
+                &::after{
+                    
+                transform:scale(1);
+                }
+                
+                color: $color-title;
+            }
+        }
+        .title-3{
+            font-size:1.5rem;
+        }
+        .logo{
+            img{
+                width:40px;
+            }
+        }
+        
+        
+        .footer-desc,.footer-infos{
+            margin:0.5rem 1rem;
+        }
+        .footer-infos{
+            margin-bottom:2rem;
+        }
+        .copyright{
+            text-align: center;
+            background-color: lighten($color-gray, 15);
+            color:var(--bg-item);
+            padding:1rem;
+            font-weight:300;
+        }
+    }
+    @media only screen and(max-width:400px){
+        .footer{
+            background-image:none;
+            .container-centered{
+                justify-content: center;
+                
+            }
+            .footer-desc,.footer-infos{
+                text-align: center;
+            }
+            .title-3,.title2{
+                text-align: center;
+            }
+        }
+        
+
+    }
