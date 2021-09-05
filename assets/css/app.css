@@ -1067,7 +1067,7 @@ a:hover {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  background: url("../img/Bg.png") no-repeat right -70% top 35%/85%;
+  background: url("../img/Bg.png") no-repeat right -70% top 45%/85%;
   padding: 6.25rem 0;
 }
 .banner a {
@@ -1275,6 +1275,12 @@ a:hover {
 @media only screen and (max-width: 550px) {
   #infos .container::after, #infos .container::before {
     display: none;
+  }
+  #infos .info-item {
+    text-align: center;
+  }
+  #infos .info-item .title-2 {
+    font-size: 1.7rem;
   }
 }
 /* ==  =================== Fn Infos ===============*/
