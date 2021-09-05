@@ -1110,6 +1110,8 @@ a:hover {
   margin: 1rem 0;
 }
 .banner .baseline-name {
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
+  backdrop-filter: saturate(180%) blur(5px);
   max-width: 85%;
   word-wrap: break-word;
   background-clip: text;
@@ -1118,6 +1120,10 @@ a:hover {
   background-size: cover;
   background-position: center;
   color: transparent;
+  padding: 1rem;
+  padding-right: 0;
+  transition: var(--topbar-transition);
+  background-color: var(--header-background);
   background-image: linear-gradient(45deg, #2ec5b2, #613bdb);
 }
 .banner .baseline-name:hover {

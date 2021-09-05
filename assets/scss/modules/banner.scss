@@ -75,6 +75,9 @@
     }
 
     .baseline-name {
+        
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(5px);
         max-width: 85%;
         word-wrap: break-word;
         background-clip: text;
@@ -83,6 +86,10 @@
         background-size:cover;
         background-position: center;
         color:transparent;
+        padding:1rem;
+        padding-right:0;
+        transition: var(--topbar-transition);
+        background-color: var(--header-background);
         @include gradient(45deg,$color-green,$color-title);
         &:hover{
             @include gradient(-75deg,$color-green,$color-title);
