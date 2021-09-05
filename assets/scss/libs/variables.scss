@@ -1,7 +1,8 @@
-
+@use "sass:math";
 @import "mixins.scss";
 :root {
     --color:#613bdb;
+    --colo-lin-white:#eaf3fa;
     --color-title: #613bdb;
     --color-t: #4176ea;
     --color-white: #fff;
@@ -10,13 +11,25 @@
     --color-dark: #0a0a0a;
     --color-gray: #565656;
     --bg-item: #f1f1f1;
+
+    --header-background: hsla(0,0%,100%,0.8);
+    --header-border-bottom: inset 0 -1px 0 0 rgba(0,0,0,0.1);
+    --geist-page-width-with-margin: 1150px;
+    --topbar-transition: box-shadow .2s ease 0s,background-color .2s ease 0s;    
+    --geist-space-gap: 24px;
+    --header-height: 80px;    
+    --space-gap-half: 12px;
+
+
     --gradient-1: linear-gradient(45deg, var(--color-title), var(--color-green));
+    --gradient-2: linear-gradient(45deg, var(--color-title), var(--color-t));
+    --gradient-3: linear-gradient(90deg, var(--color-t), var(--color-title));
 
     --size-title: 3.5rem;
     --size-text: 1.5rem;
 
-    --font-primary: 'Poppins', 'Segoe UI', sans-serif;
-    --font-secondary: 'Inter', 'Montserrat', sans-serif;
+    --font-primary:'Inter','Segoe UI', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
     --space-size: 100px;
 }
 $size-container:1300px;
@@ -31,6 +44,18 @@ $color-title: #613bdb;
 $bg-item:#f1f1f1;
 $space-size:100px;
 
+/* Bouton humberger*/
+
+$burger-size:35px;
+$burger-content-height:25px;
+$burger-content-width:25px;
+$burger-line-width:5px;
+$burger-line-height:3px;
+$burger-line-min-width:2px;
+$top-1-burger:0;
+$top-2-burger:(math.div($burger-content-height, 2) - math.div($burger-line-width, 2));
+$top-3-burger:$burger-content-height - $burger-line-width;
+$size:30px;
 $gradient-1: gradient(45deg,$color-title,$color-green);
 
 @media only screen and(max-width:720px) {

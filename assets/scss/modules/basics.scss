@@ -1,4 +1,35 @@
 @font-face{
+    font-family:'Roboto';
+    src:url('../fonts/roboto/Roboto-Light.ttf')format("truetype");
+    font-weight:300;
+    font-display:swap;
+
+}
+
+@font-face{
+    font-family:'Roboto';
+    src:url('../fonts/roboto/Roboto-Regular.ttf')format("truetype");
+    font-weight:400;
+    font-display:swap;
+
+}
+@font-face{
+    font-family:'Roboto';
+    src:url('../fonts/roboto/Roboto-Medium.ttf')format("truetype");
+    font-weight:500;
+    font-display:swap;
+
+}
+
+@font-face{
+    font-family:'Roboto';
+    src:url('../fonts/roboto/Roboto-Bold.ttf')format("truetype");
+    font-weight:700;
+    font-display:swap;
+
+}
+// ===================
+@font-face{
     font-family:'Poppins';
     src:url('../fonts/poppins/Poppins-Light.otf')format("opentype");
     font-weight:300;
@@ -28,6 +59,7 @@
     font-display:swap;
 
 }
+
 
 @font-face{
     font-family:'Inter';
@@ -80,12 +112,26 @@
     padding:0;
     box-sizing:border-box;
 }
+html{
+    scroll-behavior: smooth;
+    touch-action: manipulation;
+    font-feature-settings: "rlig" 1,"calt" 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+}
 body{
     font-family:var(--font-primary);
     font-weight:400;
     color:var(--color-dark);
     background-color: $bg-item;
-    scroll-behavior: smooth;
+    font-family: var(--font-primary);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    scroll-padding-top: var(--header-height);
 }
 h1,h2,h3,h4,h5,h6{
     font-family:var(--font-secondary);

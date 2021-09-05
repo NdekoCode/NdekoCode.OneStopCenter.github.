@@ -226,3 +226,201 @@ img{
     @include img_responsive;
 }
 }
+
+/*<!--============================= BUTTON humberger ================= -->*/
+
+.box {
+    width: $burger-size;
+    height: $burger-size;
+    margin: rem(10);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    background-color: var(--color-title);
+
+}
+
+.container-lines {
+    width: $burger-content-width;
+    height: $burger-content-height;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    color:var(--color-link-white);
+
+    .line {
+        position: absolute;
+        width: $burger-content-width;
+        height: $burger-line-height;
+        background-color: currentColor;
+
+        &:nth-child(1) {
+            top: $top-1-burger;
+        }
+
+        &:nth-child(2) {
+            width: 50%;
+            right: 0;
+            top: $top-2-burger;
+        }
+
+        &:nth-child(3) {
+            top: $top-3-burger;
+        }
+    }
+}
+
+
+/* -----------ANIME 1--------------*/
+
+.b1 {
+    .line {
+
+        &:nth-child(3),
+        &:nth-child(1) {
+            transform: rotate(0deg);
+            transition: transform 0.3s ease-in-out, top 0.3s 0.3s ease-in-out;
+        }
+
+        &:nth-child(2) {
+
+            transition: opacity 0.3s 0.3s ease-in-out;
+        }
+    }
+
+    &.active {
+        .line {
+            &:nth-child(1) {
+
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(1),
+            &:nth-child(3) {
+                top: $top-2-burger;
+                transition: top 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+
+            }
+
+            &:nth-child(3) {
+
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+
+/* ANIME 2 -----------------------*/
+
+.b2 {
+    .line {
+
+        &:nth-child(1) {
+
+            transition: top 0.3s 0.3s ease-in-out;
+        }
+
+        &:nth-child(3) {
+            transform: rotate(0deg);
+            transition: transform 0.3s ease-in-out, top 0.3s 0.3s ease-in-out;
+        }
+
+        &:nth-child(2) {
+
+            transition: opacity 0.3s 0.3s ease-in-out;
+        }
+    }
+
+    &.active {
+        .line {
+
+            &:nth-child(1),
+            &:nth-child(3) {
+                top: $top-2-burger;
+                transition: top 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+
+            }
+
+            &:nth-child(3) {
+
+                transform: rotate(-90deg);
+            }
+        }
+
+    }
+}
+
+/* --------ANIME 3 -------------*/
+.b3 {
+    .container-lines {
+
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .line {
+
+        &:nth-child(3),
+        &:nth-child(1) {
+            transform: rotate(0deg);
+            transition: transform 0.3s ease-in-out, top 0.3s 0.3s ease-in-out;
+        }
+
+        &:nth-child(2) {
+
+            transition: opacity 0.3s 0.3s ease-in-out;
+        }
+    }
+
+    &.active {
+        .container-lines {
+            transition: transform 0.3s 0.3s ease-in-out;
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+
+        .line {
+            &:nth-child(1) {
+
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(1),
+            &:nth-child(3) {
+                top: $top-2-burger;
+                transition: top 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+
+            }
+
+            &:nth-child(3) {
+
+                transform: rotate(-45deg);
+            }
+        }
+
+    }
+}
+
+/*
+
+<!--============================= FIN BUTTON humberger ================= -->
+*/
+.rounded{
+    border-radius:rem(4);
+}
