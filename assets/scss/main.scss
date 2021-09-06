@@ -11,18 +11,18 @@
 @import "modules/basics.scss";
 
 
-@include space();
-@include space(padding,p);
-@include spaceDirection(margin,y,m);
-@include spaceDirection(margin,x,m);
-@include spaceDirection(margin,t,m);
-@include spaceDirection(margin,b,m);
-@include spaceDirection(margin,r,m);
+// @include space();
+// @include space(padding,p);
+// @include spaceDirection(margin,y,m);
+// @include spaceDirection(margin,x,m);
+// @include spaceDirection(margin,t,m);
+// @include spaceDirection(margin,b,m);
+// @include spaceDirection(margin,r,m);
 
-@include spaceDirection(padding,y,p);
-@include spaceDirection(padding,x,p);
-@include spaceDirection(padding,t,p);
-@include spaceDirection(padding,b,p);
+// @include spaceDirection(padding,y,p);
+// @include spaceDirection(padding,x,p);
+// @include spaceDirection(padding,t,p);
+// @include spaceDirection(padding,b,p);
 /* ==  =================== Fin Regle de base ===============*/
 
 /* ==  =================== TOPBAR ===============*/

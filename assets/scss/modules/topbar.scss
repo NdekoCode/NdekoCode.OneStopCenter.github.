@@ -347,7 +347,7 @@
             .navbar.navbar-top {
                 position: fixed;
                 top: 0;
-                transform:translateX(-500px);
+                transform:translateX(500px);
                 // display: none;
                 padding-top: 4rem;
                 width: 0;
@@ -375,7 +375,6 @@
                 height: 100vh;
                 transform:translateX(0);
                 width: 500px;
-
                 background-image: var(--gradient-2);
 
                 .list-group {
