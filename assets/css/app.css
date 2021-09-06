@@ -967,16 +967,16 @@ a:hover {
   .topbar .navigation .navbar.navbar-top {
     position: fixed;
     top: 0;
-    right: -500px;
-    display: none;
+    transform: translateX(-500px);
     padding-top: 4rem;
     width: 0;
     flex-direction: row-reverse;
+    transition: transform 0.3s;
   }
   .topbar .navigation .navbar.navbar-top .list-group {
     position: absolute;
-    top: 35%;
-    left: 45%;
+    top: 30%;
+    left: 50%;
     transform: translate(-50%, -50%);
     max-width: 500px;
     flex-direction: column;
@@ -985,11 +985,9 @@ a:hover {
     width: 100%;
   }
   .topbar .navigation.active .navbar.navbar-top {
-    display: initial;
     height: 100vh;
-    right: 0;
-    width: 300px;
-    transition: right 0.3s, width 0.3s;
+    transform: translateX(0);
+    width: 500px;
     background-image: var(--gradient-2);
   }
   .topbar .navigation.active .navbar.navbar-top .list-group li {
@@ -1021,7 +1019,7 @@ a:hover {
   }
   .topbar .box {
     position: absolute;
-    top: 3.125rem;
+    top: 0.9375rem;
     right: 0.625rem;
     z-index: 200;
     border: none;
@@ -1039,9 +1037,6 @@ a:hover {
     display: initial;
     right: 0;
     top: 0.9375rem;
-  }
-  .topbar .navigation .list-group {
-    left: 60% !important;
   }
 }
 /* ==  =================== Fin TOPBAR ===============*/
