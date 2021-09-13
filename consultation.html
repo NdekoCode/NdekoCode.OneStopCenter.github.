@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/step.css">
+    <title>Consultation On stop center</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="banner">
+            <img src="./assets/img/examen.png" alt="">
+        </div>
+        <div class="form-content">
+            <form action="" class="form" method="POST" id="consulationForm">
+                <div class="alert"></div>
+                <!-- Page 1 =Form 1 -->
+                <div class="step" id="page1">
+ <!-- Information generale de la patiente -->
+                    <div class="title-content">
+                        <h2 class="title-1">Information generale de la patiente</h2>
+                    </div>
+                    <div class="form-container">
+
+ <!-- adresse -->
+                        <div class="form-group">
+                            <div class="input-container">
+                                <input type="text" name="adresse" autocomplete="off" id="adresse" class="input"
+                                    placeholder="Votre adresse" required>
+                                <label for="adresse">Adresse</label>
+                            </div>
+                            <div class="alert-container"><span></span></div>
+                        </div>
+<!-- sexePatient -->
+                        <div class="form-group">
+                            <div class="input-container">
+                                <select name="sexePatient" id="">
+                                    <option value="" selected>Choisissez votre sexe</option>
+                                    <option value="Male">Masculin</option>
+                                    <option value="Female">Feminin</option>
+                                    <option value="other">Autre...</option>
+                                </select>
+
+                            </div>
+                            <div class="alert-container"><span></span></div>
+                        </div>
+<!-- agePatient -->
+                        <div class="form-group">
+                            <div class="input-container">
+                                <input type="number" name="agePatient" autocomplete="off" id="agePatient" placeholder="Entrer votre age"
+                                    class="input" required>
+                                <label for="agePatient">Age</label>
+                            </div>
+                            <div class="alert-container"><span></span></div>
+                        </div>
+<!-- provenancePatient                       -->
+                        <div class="form-group">
+                            <div class="input-container">
+
+                                <input type="text" name="provenancePatient" autocomplete="off" id="provenance" class="input"
+                                    placeholder="Entrer votre provenance" required>
+                                <label for="provenance">Provenance</label>
+                            </div>
+                            <div class="alert-container"><span></span></div>
+                        </div>
+
+                    </div>
+                    <div class="form-container wd-7">
+<!-- zondeSanter -->
+                        <div class="form-group">
+                            <div class="input-container">
+
+                                <input type="text" autocomplete="off" name="zondeSanter" id="zondeSanter" class="input"
+                                    placeholder="Entrer la zone de santé" required>
+                                <label for="zondeSanter">Zone de santé</label>
+                            </div>
+                            <div class="alert-container"><span></span></div>
+                        </div>
+<!-- Dateobirth -->
+                        <div class="form-group">
+                            <div class="input-container">
+                                <input type="date" name="Dateobirth" id="bob" class="input">
+                                <label for="bob">Date de naissance</label>
+                            </div>
+                            <div class="alert-container"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Page 2 =Form 2 -->
+                <div class="step" id="page2">
+<!-- birthHome -->
+
+                    <div class="form-group">
+                        <div class="input-container">
+                            <input type="text" name="birthHome" autocomplete="off" id="birthHome"
+                                placeholder="Entrer votre Lieux de naissance" class="input" required>
+                            <label for="birthHome">Lieu naissance</label>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+
+ <!-- civilEtat -->
+                    <div class="form-group">
+                        <div class="input-container">
+                            <select name="civilEtat" id="#select" required>
+                                <option value="" selected>Choisisswez votre Etat civil</option>
+                                <option value="Marie">Marie</option>
+                                <option value="Celibataire">Celibataire</option>
+                                <option value="Autre">Autre...</option>
+                            </select>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+<!-- dateExamen -->
+                    <div class="form-group">
+                        <div class="input-container">
+
+                            <input type="date" name="dateExamen" autocomplete="off" id="dateExamen" class="input" required>
+                            <label for="dateExamen">Date d'examen</label>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+<!-- niveauEtude -->
+                    <div class="form-group">
+                        <div class="input-container">
+
+                            <select name="niveauEtude" id="#select" required>
+                                <option value="" selected>Choisisswez Votre niveau d'etude</option>
+                                <option value="Diplomer">Diplomé</option>
+                                <option value="Graduet">Graduet</option>
+                                <option value="Licencier">Licencier</option>
+                                <option value="Doctor">Doctor</option>
+                                <option value="Professeur">Professeur</option>
+                                <option value="Autre">Autre...</option>
+                            </select>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+                    <div class="form-container">
+<!-- accompagneur -->
+                        <div class="form-group">
+                            <div class="input-container">
+
+                                <input type="text" autocomplete="off" name="accompagneur" id="accomp" class="input"
+                                    placeholder="Entrer les nom des accompagneur si mineur" required>
+                                <label for="accomp">Nom des accompagneur</label>
+                            </div>
+                            <div class="alert-container"><span></span></div>
+                        </div>
+<!-- occupation -->
+                        <div class="form-group">
+                            <div class="input-container">
+
+                                <input type="text" name="occupation" autocomplete="off" id="occupation" class="input"
+                                    placeholder="Entrer votre occupation actuelle" required>
+                                <label for="occupation">Occupation actuelle</label>
+                            </div>
+                            <div class="alert-container"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Page 3 =Form 3 -->
+                <div class="step" id="page3">
+<!-- Profile du/des presumé(s) auteur(s) -->
+                    <div class="title-content">
+                        <h2 class="title-1">Profile du/des presumé(s) auteur(s)</h2>
+                    </div>
+                    <div class="form-container">
+<!-- nombreAgresseur -->
+                        <div class="form-group">
+                            <div class="input-container">
+                                <input type="number" autocomplete="off" id="nombreAgresseur" name="nombreAgresseur"
+                                    placeholder="Entrer le nombre d'aggresseurs" class="input" required>
+                                <label for="nombreAgresseur">Nombre d'aggresseurs</label>
+                            </div>
+                            <div class="alert-container"><span></span></div>
+                        </div>
+<!-- ageAuteur -->
+                        <div class="form-group">
+                            <div class="input-container">
+    
+                                <input type="text" autocomplete="off" id="ageAuteur" class="input"
+                                    placeholder="Entrer l'age de(s) auteur(s)" name="ageAuteur" required>
+                                <label for="ageAuteur">Age de(s) auteur(s)</label>
+                            </div>
+                            <div class="alert-container"><span></span></div>
+                        </div></div>
+                    <div class="form-container radio">
+<!-- descriptionCrime -->
+                        <div class="form-group radio">
+                            <h4 class="title-3">Personne en arme/Sa forme</h4>
+                            <div class="input-container">
+                                <input type="radio" autocomplete="off" id="Yes" value="Oui" name="descriptionCrime"
+                                    class="input" checked>
+                                <label for="Yes" class="label">Oui</label>
+                                <input type="radio" value="Non" autocomplete="off" name="descriptionCrime" id="no"
+                                    class="input">
+                                <label for="no" class="label">Non</label>
+                            </div>
+                            <div class="alert-container"><span></span></div>
+                        </div>
+<!-- descriptionPerson -->
+                        <div class="form-group radio">
+                            <h4 class="title-3">Connaissez-vous la/les personne(e</h4>
+                            <div class="input-container">
+                                <input type="radio" autocomplete="off" id="On" value="Oui" name="descriptionPerson"
+                                    class="input" checked>
+                                <label for="On" class="label">Oui</label>
+                                <input type="radio" value="Non" autocomplete="off" name="descriptionPerson" id="Off"
+                                    class="input">
+                                <label for="Off" class="label">Non</label>
+                            </div>
+                            <div class="alert-container"><span></span></div>
+                        </div>
+                    </div>
+<!-- selectSexeAuteur -->
+                    <div class="form-group">
+                        <div class="input-container">
+
+                            <select name="selectSexeAuteur" id="#selectSexeAuteur" required>
+                                <option value="" selected>Sexe de(s) auteur(s)</option>
+                                <option value="homme">Homme</option>
+                                <option value="femme">Femme</option>
+                                <option value="homme-femme">Homme & Femme</option>
+                                <option value="Autre">Autre...</option>
+                            </select>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+<!-- Description de(s) auteur(s) -->
+                    <div class="form-group">
+                        <div class="input-container">
+                            <textarea name="descriptionAuteur"
+                                placeholder="Entrer la description physique de(s) auteur(s)" id="descriptionAuteur"
+                                cols="30" rows="4"></textarea>
+                            <label for="descriptionAuteur">Description de(s) auteur(s)</label>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+                </div>
+
+
+                <!-- Page 4 =Form 4 -->
+                <div class="step" id="page4">
+
+                    <div class="form-container radio">
+<!-- Relations avec la victime -->
+                        <div class="form-group radio switch w-50">
+                            <h4 class="title-3">Relations avec la victime</h4>
+                                <div class="input-container">
+                                    <input id="mf" type="checkbox" value="Membre de la famille" name="relation[]" class="switch input">
+                                    <label for="mf" class="label">Membre de la famille</label>
+                                </div>
+                            <div class="input-container">
+                                <input id="vs" type="checkbox" name="relation[]" value="voisin" class="switch input" checked>
+                                <label for="vs" class="label">Voisin</label>
+                            </div>
+                            <div class="input-container">
+                                
+                            <input id="Connaissance" type="checkbox" name="relation[]" value="Connaissance" class="switch input" checked>
+                        <label for="Connaissance" class="label">Connaissance</label>
+                            </div>
+                            <div class="input-container">
+                                <input id="Autre" type="checkbox" name="relation[]" value="Autre" class="switch input" checked>
+                                <label for="Autre"  class="label">Autre</label></div>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+<!--Evaluation du Risque  -->
+                    <div class="form-container radio">
+                        <div class="form-group radio switch">
+                            <h3 class="title-3">Evaluation du Risque & Agression</h3>
+                            <div class="input-container">
+                                    <input id="afraidVict" type="checkbox" value="A peur de retourner chez elle" name="Evalrisque[]" class="switch input">
+                                    <label for="afraidVict" class="label">La victime a-elle peur de retourner chez elle ?</label>
+                            </div>
+                            <div class="input-container">
+                                <input id="Mmort" type="checkbox" name="Evalrisque[]" value="Dit etre victime de menace de mort" class="switch input"
+                                checked> 
+                                    <label for="Mmort" class="label">La victime dit etre victime de menace de mort ?</label>
+                            </div>
+
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+                    <div class="form-container">
+ <!-- Date de lagression -->
+                    <div class="form-group">
+                        <div class="input-container">
+
+                            <input type="date" name="dateAgression" autocomplete="off" id="dateAgression" class="input" required>
+                            <label for="dateAgression">Date de lagression</label>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+<!-- Heure de l'agression -->
+                    <div class="form-group">
+                        <div class="input-container">
+
+                            <input type="time" name="hourAgression" autocomplete="off" id="hourAgression" value="10:00" class="input" required>
+                            <label for="hourAgression">Heure de l'agression</label>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="input-container">
+                            <input type="number" name="nombreViolence" autocomplete="off" id="nombreViolence" placeholder="Quantieme incident de violent vecus par la patiente"
+                                class="input" required>
+                            <label for="nombreViolence">Nombre Incident de violence</label>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+
+        </div>
+
+
+        <!-- Page 5 =Form 5 -->
+        <div class="step" id="page4">
+<!-- Description de l'agression par la victime-->
+            <div class="title-content">
+                <h2 class="title-1">Description de l'agression par la victime</h2>
+            </div>
+
+<div class="form-group">
+    <div class="input-container">
+        <select name="CirconstanceViolation" id="#CirconstanceViolation" required>
+            <option value="" selected>Descrivez les Circonstance ?</option>
+            <option value="Deplacement-de-population">Deplacement de population</option>
+            <option value="Chemin-de-ecole">Chemin de l'ecole</option>
+            <option value="Dans-le-champ">Dans les champs</option>
+            <option value="A-la-source-d'-eau">A la source d'eau</option>
+            <option value="Autre">Autres...</option>
+        </select>
+    </div>
+    <div class="alert-container"><span></span></div>
+</div>
+<div class="form-group">
+    <div class="input-container">
+        <select name="violenceType" id="#violenceType" required>
+            <option value="" selected>Descrivez le type de violence ?</option>
+            <option value="Harcelement">Harcelement</option>
+            <option value="Tentative-de-viol">Tentative de viol</option>
+            <option value="Violence-domestique">Violence domestique</option>
+            <option value="Mutilation">Mutilation</option>
+            <option value="Autre">Autres...</option>
+        </select>
+    </div>
+    <div class="alert-container"><span></span></div>
+</div>
+
+<div class="form-container radio">
+    <div class="form-group radio switch">
+        <h3 class="title-3">Avez-vous subit un pillage ?</h3>
+        <div class="input-container">
+                <input id="pillage" type="checkbox" value="A peur de retourner chez elle" name="pillage" class="switch input" checked>
+                <label for="pillage">Oui ou non</label>
+        </div>
+
+    </div>
+    <div class="alert-container"><span></span></div>
+</div>
+
+<div class="form-group">
+    <div class="input-container">
+        <select name="swordViolence" id="#swordViolence" required>
+            <option value="" selected>Il y a-t-il eu des contrainte(Forçage de l'acte) ?</option>
+            <option value="Avec-une-arme-blanche-ou-à-feu">Avec une arme blanche</option>
+            <option value="Physique">Physique</option>
+            <option value="Drogues">Drogues</option>
+            <option value="Alcool">Alcool</option>
+            <option value="Autre">Autres...</option>
+        </select>
+    </div>
+    <div class="alert-container"><span></span></div>
+</div>
+<div class="form-group">
+    <div class="input-container">
+        <textarea name="otherVictime"
+            placeholder="Autres victimes presentes, nombre de temoins" id="otherVictime"
+            cols="30" rows="4"></textarea>
+        <label for="otherVictime">Autres victimes presentes</label>
+    </div>
+    <div class="alert-container"><span></span></div>
+</div>
+        </div>
+        <!-- Button -->
+        <div class="btn-container">
+            <button type="button" name="prev" class="prev">Previous</button>
+            <button type="button" name="next" class="next">Next</button>
+        </div>
+        <!-- Bulle -->
+        <footer class="form-footer">
+            <a href="#" class="page-num"></a>
+            <a href="#" class="page-num"></a>
+            <a href="#" class="page-num"></a>
+            <a href="#" class="page-num"></a>
+        </footer>
+</form>
+    </div>
+    <script src="./assets/js/stepper.js"></script>
+</body>
+
+</html>
