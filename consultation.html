@@ -5,11 +5,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Custom-Files -->
+	<link href="./assets/css/app.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/css/step.css">
     <title>Consultation On stop center</title>
 </head>
 
 <body>
+    
+	<!-- bannière principale -->
+	<header id="home" class="contact-page">
+
+		<!-- haut de page--> 
+			<div class="topbar">
+				<div class="container">
+					
+			
+			<button class="box b1 gradient-2 rounded">
+				<div class="container-lines">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</button>
+				<div class="topbar-home">
+					<div class="topbar-home-container">
+						
+					<div class="home-contact">
+						
+						<!-- numero de telephone -->
+						<p><span class="fa fa-volume-control-phone"></span>+243 991 487 950</p>
+						
+						<!-- logo-->
+						<h1 class="title-1 logo"><a href="index.html">StopCenter<img src="./assets/img/logo.png" alt=" "></a></h1>
+						</div>
+						<div class="home-services">
+							<a class="btn home-link rounded" href="./consultation.html">Consulatation</a>
+						</div>
+					</div>
+				</div>
+				
+		<!-- menu de navigation -->
+		<div class="navigation">
+			<nav class="navbar navbar-top">
+				<div class="header-nav">
+				<ul class="list-group">
+					<li class="list-item"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Accueil</a></li>
+					<li class="list-item drop">
+						<!-- //Menu deroulant -->
+						<a href="#" class="nav-icon">
+							Services <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+						<ul class="list-drop dropdown">
+							<li class="list-drop-item"><a href="#application">Consulatation en ligne</a></li>
+							<li class="list-drop-item"><a href="#appointment">Réserver en ligne</a></li>
+						</ul>
+					</li>
+					
+					<li class="list-item"><a href="./faq.html" class="nav-icon">FAQ</a></li>
+					<li class="list-item drop">
+						<!-- //Menu deroulant -->
+						<a href="./about.html" class="nav-icon active">
+							en savoir plus <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+						<ul class="list-drop dropdown">
+							<li class="list-drop-item"><a href="index.html#doctors">Equipe</a></li>
+							<li class="list-drop-item"><a href="index.html#news">Blogs</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			</nav>
+			<nav class="navigation-profile">
+				<div class="navigation-content">
+                    <div class="search">
+                        <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+				<a href="#contact">Contact</a>
+				
+				<div class="home-services">
+					<a class="btn home-link rounded" href="#">Connexion</a>
+				</div>
+				</div>
+			</nav>
+		</div>
+				</div>
+		<!-- //menu de navigation -->
+			</div>
+			<!-- haut de page -->
+
+	</header>
     <div class="app">
         <div class="banner">
             <img src="./assets/img/examen.png" alt="">
@@ -18,14 +100,14 @@
             <form action="" class="form" method="POST" id="consulationForm">
                 <div class="alert"></div>
                 <!-- Page 1 =Form 1 -->
-                <div class="step" id="page1">
- <!-- Information generale de la patiente -->
+               <div class="step" id="page1">
+                    <!-- Information generale de la patiente -->
                     <div class="title-content">
                         <h2 class="title-1">Information generale de la patiente</h2>
                     </div>
                     <div class="form-container">
 
- <!-- adresse -->
+                        <!-- adresse -->
                         <div class="form-group">
                             <div class="input-container">
                                 <input type="text" name="adresse" autocomplete="off" id="adresse" class="input"
@@ -34,7 +116,7 @@
                             </div>
                             <div class="alert-container"><span></span></div>
                         </div>
-<!-- sexePatient -->
+                        <!-- sexePatient -->
                         <div class="form-group">
                             <div class="input-container">
                                 <select name="sexePatient" id="">
@@ -47,21 +129,21 @@
                             </div>
                             <div class="alert-container"><span></span></div>
                         </div>
-<!-- agePatient -->
+                        <!-- agePatient -->
                         <div class="form-group">
                             <div class="input-container">
-                                <input type="number" name="agePatient" autocomplete="off" id="agePatient" placeholder="Entrer votre age"
-                                    class="input" required>
+                                <input type="number" name="agePatient" autocomplete="off" id="agePatient"
+                                    placeholder="Entrer votre age" class="input" required>
                                 <label for="agePatient">Age</label>
                             </div>
                             <div class="alert-container"><span></span></div>
                         </div>
-<!-- provenancePatient                       -->
+                        <!-- provenancePatient           -->            
                         <div class="form-group">
                             <div class="input-container">
 
-                                <input type="text" name="provenancePatient" autocomplete="off" id="provenance" class="input"
-                                    placeholder="Entrer votre provenance" required>
+                                <input type="text" name="provenancePatient" autocomplete="off" id="provenance"
+                                    class="input" placeholder="Entrer votre provenance" required>
                                 <label for="provenance">Provenance</label>
                             </div>
                             <div class="alert-container"><span></span></div>
@@ -69,7 +151,7 @@
 
                     </div>
                     <div class="form-container wd-7">
-<!-- zondeSanter -->
+                        <!-- zondeSanter -->
                         <div class="form-group">
                             <div class="input-container">
 
@@ -79,7 +161,7 @@
                             </div>
                             <div class="alert-container"><span></span></div>
                         </div>
-<!-- Dateobirth -->
+                        <!-- Dateobirth -->
                         <div class="form-group">
                             <div class="input-container">
                                 <input type="date" name="Dateobirth" id="bob" class="input">
@@ -93,7 +175,7 @@
 
                 <!-- Page 2 =Form 2 -->
                 <div class="step" id="page2">
-<!-- birthHome -->
+                    <!-- birthHome -->
 
                     <div class="form-group">
                         <div class="input-container">
@@ -104,7 +186,7 @@
                         <div class="alert-container"><span></span></div>
                     </div>
 
- <!-- civilEtat -->
+                    <!-- civilEtat -->
                     <div class="form-group">
                         <div class="input-container">
                             <select name="civilEtat" id="#select" required>
@@ -116,16 +198,17 @@
                         </div>
                         <div class="alert-container"><span></span></div>
                     </div>
-<!-- dateExamen -->
+                    <!-- dateExamen -->
                     <div class="form-group">
                         <div class="input-container">
 
-                            <input type="date" name="dateExamen" autocomplete="off" id="dateExamen" class="input" required>
+                            <input type="date" name="dateExamen" autocomplete="off" id="dateExamen" class="input"
+                                required>
                             <label for="dateExamen">Date d'examen</label>
                         </div>
                         <div class="alert-container"><span></span></div>
                     </div>
-<!-- niveauEtude -->
+                    <!-- niveauEtude -->
                     <div class="form-group">
                         <div class="input-container">
 
@@ -142,7 +225,7 @@
                         <div class="alert-container"><span></span></div>
                     </div>
                     <div class="form-container">
-<!-- accompagneur -->
+                        <!-- accompagneur -->
                         <div class="form-group">
                             <div class="input-container">
 
@@ -152,7 +235,7 @@
                             </div>
                             <div class="alert-container"><span></span></div>
                         </div>
-<!-- occupation -->
+                        <!-- occupation -->
                         <div class="form-group">
                             <div class="input-container">
 
@@ -168,12 +251,12 @@
 
                 <!-- Page 3 =Form 3 -->
                 <div class="step" id="page3">
-<!-- Profile du/des presumé(s) auteur(s) -->
+                    <!-- Profile du/des presumé(s) auteur(s)-->
                     <div class="title-content">
                         <h2 class="title-1">Profile du/des presumé(s) auteur(s)</h2>
                     </div>
                     <div class="form-container">
-<!-- nombreAgresseur -->
+                        <!-- nombreAgresseur -->
                         <div class="form-group">
                             <div class="input-container">
                                 <input type="number" autocomplete="off" id="nombreAgresseur" name="nombreAgresseur"
@@ -182,18 +265,19 @@
                             </div>
                             <div class="alert-container"><span></span></div>
                         </div>
-<!-- ageAuteur -->
+                        <!-- ageAuteur -->
                         <div class="form-group">
                             <div class="input-container">
-    
+
                                 <input type="text" autocomplete="off" id="ageAuteur" class="input"
                                     placeholder="Entrer l'age de(s) auteur(s)" name="ageAuteur" required>
                                 <label for="ageAuteur">Age de(s) auteur(s)</label>
                             </div>
                             <div class="alert-container"><span></span></div>
-                        </div></div>
+                        </div>
+                    </div>
                     <div class="form-container radio">
-<!-- descriptionCrime -->
+                        <!-- descriptionCrime -->
                         <div class="form-group radio">
                             <h4 class="title-3">Personne en arme/Sa forme</h4>
                             <div class="input-container">
@@ -206,7 +290,7 @@
                             </div>
                             <div class="alert-container"><span></span></div>
                         </div>
-<!-- descriptionPerson -->
+                        <!-- descriptionPerson -->
                         <div class="form-group radio">
                             <h4 class="title-3">Connaissez-vous la/les personne(e</h4>
                             <div class="input-container">
@@ -220,7 +304,7 @@
                             <div class="alert-container"><span></span></div>
                         </div>
                     </div>
-<!-- selectSexeAuteur -->
+                    <!-- selectSexeAuteur -->
                     <div class="form-group">
                         <div class="input-container">
 
@@ -234,7 +318,7 @@
                         </div>
                         <div class="alert-container"><span></span></div>
                     </div>
-<!-- Description de(s) auteur(s) -->
+                    <!-- Description de(s) auteur(s) -->
                     <div class="form-group">
                         <div class="input-container">
                             <textarea name="descriptionAuteur"
@@ -251,162 +335,563 @@
                 <div class="step" id="page4">
 
                     <div class="form-container radio">
-<!-- Relations avec la victime -->
+                        <!-- Relations avec la victime -->
                         <div class="form-group radio switch w-50">
                             <h4 class="title-3">Relations avec la victime</h4>
-                                <div class="input-container">
-                                    <input id="mf" type="checkbox" value="Membre de la famille" name="relation[]" class="switch input">
-                                    <label for="mf" class="label">Membre de la famille</label>
-                                </div>
                             <div class="input-container">
-                                <input id="vs" type="checkbox" name="relation[]" value="voisin" class="switch input" checked>
+                                <input id="mf" type="checkbox" value="Membre de la famille" name="relation[]"
+                                    class="switch input">
+                                <label for="mf" class="label">Membre de la famille</label>
+                            </div>
+                            <div class="input-container">
+                                <input id="vs" type="checkbox" name="relation[]" value="voisin" class="switch input"
+                                    checked>
                                 <label for="vs" class="label">Voisin</label>
                             </div>
                             <div class="input-container">
-                                
-                            <input id="Connaissance" type="checkbox" name="relation[]" value="Connaissance" class="switch input" checked>
-                        <label for="Connaissance" class="label">Connaissance</label>
+
+                                <input id="Connaissance" type="checkbox" name="relation[]" value="Connaissance"
+                                    class="switch input" checked>
+                                <label for="Connaissance" class="label">Connaissance</label>
                             </div>
                             <div class="input-container">
-                                <input id="Autre" type="checkbox" name="relation[]" value="Autre" class="switch input" checked>
-                                <label for="Autre"  class="label">Autre</label></div>
+                                <input id="Autre" type="checkbox" name="relation[]" value="Autre" class="switch input"
+                                    checked>
+                                <label for="Autre" class="label">Autre</label></div>
                         </div>
                         <div class="alert-container"><span></span></div>
                     </div>
-<!--Evaluation du Risque  -->
+                    <!--Evaluation du Risque  -->
                     <div class="form-container radio">
                         <div class="form-group radio switch">
                             <h3 class="title-3">Evaluation du Risque & Agression</h3>
                             <div class="input-container">
-                                    <input id="afraidVict" type="checkbox" value="A peur de retourner chez elle" name="Evalrisque[]" class="switch input">
-                                    <label for="afraidVict" class="label">La victime a-elle peur de retourner chez elle ?</label>
+                                <input id="afraidVict" type="checkbox" value="A peur de retourner chez elle"
+                                    name="Evalrisque[]" class="switch input">
+                                <label for="afraidVict" class="label">La victime a-elle peur de retourner chez elle
+                                    ?</label>
                             </div>
                             <div class="input-container">
-                                <input id="Mmort" type="checkbox" name="Evalrisque[]" value="Dit etre victime de menace de mort" class="switch input"
-                                checked> 
-                                    <label for="Mmort" class="label">La victime dit etre victime de menace de mort ?</label>
+                                <input id="Mmort" type="checkbox" name="Evalrisque[]"
+                                    value="Dit etre victime de menace de mort" class="switch input" checked>
+                                <label for="Mmort" class="label">La victime dit etre victime de menace de mort ?</label>
                             </div>
 
                         </div>
                         <div class="alert-container"><span></span></div>
                     </div>
                     <div class="form-container">
- <!-- Date de lagression -->
-                    <div class="form-group">
-                        <div class="input-container">
+                        <!-- Date de lagression -->
+                        <div class="form-group">
+                            <div class="input-container">
 
-                            <input type="date" name="dateAgression" autocomplete="off" id="dateAgression" class="input" required>
-                            <label for="dateAgression">Date de lagression</label>
+                                <input type="date" name="dateAgression" autocomplete="off" id="dateAgression"
+                                    class="input" required>
+                                <label for="dateAgression">Date de lagression</label>
+                            </div>
+                            <div class="alert-container"><span></span></div>
                         </div>
-                        <div class="alert-container"><span></span></div>
-                    </div>
-<!-- Heure de l'agression -->
-                    <div class="form-group">
-                        <div class="input-container">
+                        <!-- Heure de l'agression -->
+                        <div class="form-group">
+                            <div class="input-container">
 
-                            <input type="time" name="hourAgression" autocomplete="off" id="hourAgression" value="10:00" class="input" required>
-                            <label for="hourAgression">Heure de l'agression</label>
+                                <input type="time" name="hourAgression" autocomplete="off" id="hourAgression"
+                                    value="10:00" class="input" required>
+                                <label for="hourAgression">Heure de l'agression</label>
+                            </div>
+                            <div class="alert-container"><span></span></div>
                         </div>
-                        <div class="alert-container"><span></span></div>
                     </div>
-                    </div>
-                    
+
                     <div class="form-group">
                         <div class="input-container">
-                            <input type="number" name="nombreViolence" autocomplete="off" id="nombreViolence" placeholder="Quantieme incident de violent vecus par la patiente"
-                                class="input" required>
+                            <input type="number" name="nombreViolence" autocomplete="off" id="nombreViolence"
+                                placeholder="Quantieme incident de violent vecus par la patiente" class="input"
+                                required>
                             <label for="nombreViolence">Nombre Incident de violence</label>
                         </div>
                         <div class="alert-container"><span></span></div>
                     </div>
 
+                </div>
+
+
+                <!-- Page 5 =Form 5 -->
+                <div class="step" id="page4">
+                    <!-- Description de l'agression par la victime-->
+                    <div class="title-content">
+                        <h2 class="title-1">Description de l'agression par la victime</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-container">
+                            <select name="CirconstanceViolation" id="#CirconstanceViolation" required>
+                                <option value="" selected>Descrivez les Circonstance ?</option>
+                                <option value="Deplacement-de-population">Deplacement de population</option>
+                                <option value="Chemin-de-ecole">Chemin de l'ecole</option>
+                                <option value="Dans-le-champ">Dans les champs</option>
+                                <option value="A-la-source-d'-eau">A la source d'eau</option>
+                                <option value="Autre">Autres...</option>
+                            </select>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-container">
+                            <select name="violenceType" id="#violenceType" required>
+                                <option value="" selected>Descrivez le type de violence ?</option>
+                                <option value="Harcelement">Harcelement</option>
+                                <option value="Tentative-de-viol">Tentative de viol</option>
+                                <option value="Violence-domestique">Violence domestique</option>
+                                <option value="Mutilation">Mutilation</option>
+                                <option value="Autre">Autres...</option>
+                            </select>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+
+                    <div class="form-container radio">
+                        <div class="form-group radio switch">
+                            <h3 class="title-3">Avez-vous subit un pillage ?</h3>
+                            <div class="input-container">
+                                <input id="pillage" type="checkbox" value="A peur de retourner chez elle" name="pillage"
+                                    class="switch input" checked>
+                                <label for="pillage">Oui ou non</label>
+                            </div>
+
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-container">
+                            <select name="swordViolence" id="#swordViolence" required>
+                                <option value="" selected>Il y a-t-il eu des contrainte(Forçage de l'acte) ?</option>
+                                <option value="Avec-une-arme-blanche-ou-à-feu">Avec une arme blanche</option>
+                                <option value="Physique">Physique</option>
+                                <option value="Drogues">Drogues</option>
+                                <option value="Alcool">Alcool</option>
+                                <option value="Autre">Autres...</option>
+                            </select>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-container">
+                            <textarea name="otherVictime" placeholder="Autres victimes presentes, nombre de temoins"
+                                id="otherVictime" cols="30" rows="4"></textarea>
+                            <label for="otherVictime">Autres victimes presentes</label>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+                </div>
+                <!-- Page 6 =Form 6 -->
+                 <div class="step" id="page6">
+                    <!-- Description de l'agression par la victime-->
+                    <div class="title-content">
+                        <h2 class="title-1">LORS de l'agression, y a-t-l eu: ?</h2>
+                    </div>
+
+
+                    <div class="form-container radio">
+                        <div class="form-group radio switch">
+                            <h3 class="title-3">PENETRATION</h3>
+                            <div class="input-container">
+                                <input id="oui" type="radio" value="Oui" name="penetration" class="input" checked>
+                                <label for="oui">Oui</label>
+                                <input id="non" type="radio" value="Non" name="penetration" class="input" checked>
+                                <label for="non">Non</label>
+                                <input id="Notsure" type="radio" value="Non" name="penetration" class="input">
+                                <label for="Notsure">Pas sure</label>
+                                <input id="commentpenetration" type="text" value="" name="commentpenetration" placeholder="Entrer votre commentaire" class="input" checked>
+                            </div>
+                            <h3 class="title-3 bold">La penetration se fait avec:</h3>
+                            <h4 class="title-3 normal">Penis</h4>
+                            
+                            <div class="input-container">
+                                <input id="ouiPenis" type="radio" value="Oui" name="penetrationPenis" class="input" checked>
+                                <label for="ouiPenis">Oui</label>
+                                <input id="nonPenis" type="radio" value="Non" name="penetrationPenis" class="input" checked>
+                                <label for="nonPenis">Non</label>
+                                <input id="NotsurePenis" type="radio" value="NotSurePenis" name="penetrationPenis" class="input">
+                                <label for="NotsurePenis">Pas sure</label>
+                                <input id="PenisComment" type="text" value="" name="commentpenetrationPenis" placeholder="Entrer votre commentaire" class="input">
+                            </div>
+                            <h4 class="title-3 normal">Doigts</h4>
+                            
+                            <div class="input-container">
+                                <input id="ouiDoigts" type="radio" value="Oui" name="penetrationDoigts" class="input" checked>
+                                <label for="ouiPenis">Oui</label>
+                                <input id="nonDoigts" type="radio" value="Non" name="penetrationDoigts" class="input" checked>
+                                <label for="nonDoigts">Non</label>
+                                <input id="NotsureDoigts" type="radio" value="NotSureDoigts" name="penetrationDoigts" class="input">
+                                <label for="NotsureDoigts">Pas sure</label>
+                                <input id="DoigtsComment" type="text" value="" name="commentDoigts" placeholder="Entrer votre commentaire" class="input">
+                            </div>
+
+                            <h4 class="title-3 normal">Autres à décrire</h4>
+                            
+                            <div class="input-container">
+                                <input id="ouiOther" type="radio" value="Oui" name="penetrationOther" class="input" checked>
+                                <label for="ouiPenis">Oui</label>
+                                <input id="nonOther" type="radio" value="Non" name="penetrationOther" class="input" checked>
+                                <label for="nonOther">Non</label>
+                                <input id="NotsureOther" type="radio" value="NotSurOther" name="penetrationOther" class="input">
+                                <label for="NotsureOther">Pas sure</label>
+                                <input id="OtherComment" type="text" value="" name="commentOther" placeholder="Entrer votre commentaire" class="input">
+                            </div>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+
+                </div> 
+<!-- Pege 7-->
+                <div class="step" id="page7">
+                    <!-- Description de l'agression par la victime-->
+                    <div class="title-content">
+                        <h2 class="title-1">Orifices de pénétration:</h2>
+                    </div>
+
+
+                    <div class="form-container radio">
+                        <div class="form-group radio switch">
+                            <h3 class="title-3">Bouche</h3>
+                            <div class="input-container">
+                                <input id="oui-Bouche" type="radio" value="Oui" name="penetration-Bouche" class="input" checked>
+                                <label for="oui-Bouche">Oui</label>
+                                <input id="non-Bouche" type="radio" value="Non" name="penetration-Bouche" class="input" checked>
+                                <label for="non-Bouche">Non</label>
+                                <input id="Notsure-Bouche" type="radio" value="Non" name="penetration-Bouche" class="input">
+                                <label for="Notsure-Bouche">Pas sure</label>
+                                <input id="commentpenetration-Bouche" type="text" value="" name="commentpenetration-Bouche" placeholder="Entrer votre commentaire" class="input" checked>
+                            </div>
+                            <h3 class="title-3">Vagin</h3>
+                            
+                            <div class="input-container">
+                                <input id="oui-Vagin" type="radio" value="Oui" name="penetration-Vagin" class="input" checked>
+                                <label for="oui-Vagin">Oui</label>
+                                <input id="non-Vagin" type="radio" value="Non" name="penetration-Vagin" class="input" checked>
+                                <label for="non-Vagin">Non</label>
+                                <input id="Notsure-Vagin" type="radio" value="Non" name="penetration-Vagin" class="input">
+                                <label for="Notsure-Vagin">Pas sure</label>
+                                <input id="commentpenetration-Vagin" type="text" value="" name="commentpenetration-Vagin" placeholder="Entrer votre commentaire" class="input" checked>
+                            </div>
+                            <!-- ====================== -->
+                            <h4 class="title-3">Anus</h4>
+                            
+                            <div class="input-container">
+                                <input id="oui-Anus" type="radio" value="Oui" name="penetration-Anus" class="input" checked>
+                                <label for="oui-Anus">Oui</label>
+                                <input id="non-Anus" type="radio" value="Non" name="penetration-Anus" class="input" checked>
+                                <label for="non-Anus">Non</label>
+                                <input id="Notsure-Anus" type="radio" value="Non" name="penetration-Anus" class="input">
+                                <label for="Notsure-Anus">Pas sure</label>
+                                <input id="commentpenetration-Anus" type="text" value="" name="commentpenetration-Anus" placeholder="Entrer votre commentaire" class="input" checked>
+                            </div>
+                            <!-- =============== -->
+
+                            <h4 class="title-3 normal">Autres à décrire</h4>
+                            
+                            <div class="input-container">
+                                <input id="ouiOther-Penetration" type="radio" value="Oui" name="penetrationOther" class="input" checked>
+                                <label for="oui-Penetration">Oui</label>
+                                <input id="nonOther-Penetration" type="radio" value="Non" name="penetrationOther-Penetration" class="input" checked>
+                                <label for="nonOther-Penetration">Non</label>
+                                <input id="NotsureOther-Penetration" type="radio" value="NotSurOther-Penetration" name="penetrationOther-Penetration" class="input">
+                                <label for="NotsureOther-Penetration">Pas sure</label>
+                                <input id="OtherComment-Penetration" type="text" value="" name="commentOther-Penetration" placeholder="Entrer votre commentaire" class="input">
+                            </div>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+
+                </div>
+                <!-- Page 8 -->
+                <div class="step" id="page8">
+                    <!-- Description de l'agression par la victime-->
+                    <div class="title-content">
+                        <h2 class="title-1">EJACULATION, Il a ejaculer dans votre:</h2>
+                    </div>
+
+
+                    <div class="form-container radio">
+                        <div class="form-group radio switch">
+                            <h3 class="title-3">Bouche</h3>
+                            <div class="input-container">
+                                <input id="oui-ejacBouche" type="radio" value="Oui" name="penetration-ejacBouche" class="input" checked>
+                                <label for="oui-ejacBouche">Oui</label>
+                                <input id="non-ejacBouche" type="radio" value="Non" name="penetration-ejacBouche" class="input" checked>
+                                <label for="non-ejacBouche">Non</label>
+                                <input id="Notsure-ejacBouche" type="radio" value="Non" name="penetration-ejacBouche" class="input">
+                                <label for="Notsure-ejacBouche">Pas sure</label>
+                                <input id="commentpenetration-ejacBouche" type="text" value="" name="commentpenetration-ejacBouche" placeholder="Entrer votre commentaire" class="input" checked>
+                            </div>
+                            <h3 class="title-3">Vagin</h3>
+                            
+                            <div class="input-container">
+                                <input id="oui-ejacVagin" type="radio" value="Oui" name="penetration-ejacVagin" class="input" checked>
+                                <label for="oui-ejacVagin">Oui</label>
+                                <input id="non-ejacVagin" type="radio" value="Non" name="penetration-ejacVagin" class="input" checked>
+                                <label for="non-ejacVagin">Non</label>
+                                <input id="Notsure-ejacVagin" type="radio" value="Non" name="penetration-ejacVagin" class="input">
+                                <label for="Notsure-ejacVagin">Pas sure</label>
+                                <input id="commentpenetration-ejacVagin" type="text" value="" name="commentpenetration-ejacVagin" placeholder="Entrer votre commentaire" class="input" checked>
+                            </div>
+                            <!-- ====================== -->
+                            <h4 class="title-3">Anus</h4>
+                            
+                            <div class="input-container">
+                                <input id="oui-ejacAnus" type="radio" value="Oui" name="penetration-ejacAnus" class="input" checked>
+                                <label for="oui-ejacAnus">Oui</label>
+                                <input id="non-ejacAnus" type="radio" value="Non" name="penetration-ejacAnus" class="input" checked>
+                                <label for="non-ejacAnus">Non</label>
+                                <input id="Notsure-ejacAnus" type="radio" value="Non" name="penetration-ejacAnus" class="input">
+                                <label for="Notsure-ejacAnus">Pas sure</label>
+                                <input id="commentpenetration-ejacAnus" type="text" value="" name="commentpenetration-ejacAnus" placeholder="Entrer votre commentaire" class="input" checked>
+                            </div>
+                            <!-- =============== -->
+
+                            <h4 class="title-3 normal">Autres à décrire</h4>
+                            
+                            <div class="input-container">
+                                <input id="ouiOther-ejaculation" type="radio" value="Oui" name="ejaculationOther" class="input" checked>
+                                <label for="oui-ejaculation">Oui</label>
+                                <input id="nonOther-ejaculation" type="radio" value="Non" name="ejaculationOther" class="input" checked>
+                                <label for="nonOther-ejaculation">Non</label>
+                                <input id="NotsureOther-ejaculation" type="radio" value="NotSurOther-ejaculation" name="ejaculationOther" class="input">
+                                <label for="NotsureOther-Penetration">Pas sure</label>
+                                <input id="OtherComment-ejaculation" type="text" value="" name="commentOther-ejaculation" placeholder="Entrer votre commentaire" class="input">
+                            </div>
+                            
+                            <h3 class="title-3 normal">A-t-il fait USAGE DE PRESERVATIF</h3>
+                            <div class="input-container">
+                                <input id="oui-preservatif" type="radio" value="Oui" name="penetration-preservatif" class="input" checked>
+                                <label for="oui-preservatif">Oui</label>
+                                <input id="non-preservatif" type="radio" value="Non" name="penetration-preservatif" class="input" checked>
+                                <label for="non-preservatif">Non</label>
+                                <input id="Notsure-preservatif" type="radio" value="Non" name="penetration-preservatif" class="input">
+                                <label for="Notsure-preservatif">Pas sure</label>
+                                <input id="commentpenetration-preservatif" type="text" value="" name="commentpenetration-preservatif" placeholder="Entrer votre commentaire" class="input" checked>
+                            </div>
+                        </div>
+                        <div class="alert-container"><span></span></div>
+                    </div>
+
+                </div> 
+                <!-- Page 9 -->
+                <div class="step" id="page9">
+                    <!-- Description de l'agression par la victime-->
+                    <div class="title-content">
+                        <h2 class="title-1">Apres l'evenement certains de ces signes ce sont-ils manifester ?</h2>
+                    </div>
+
+
+                    <div class="form-container radio">
+                        <div class="form-group radio switch">
+                            <h3 class="title-3">Vomi</h3>
+                            <div class="input-container">
+                                <input id="oui-Vomi" type="radio" value="Oui" name="penetration-Vomi" class="input" checked>
+                                <label for="oui-Vomi">Oui</label>
+                                <input id="non-Vomi" type="radio" value="Non" name="penetration-Vomi" class="input" checked>
+                                <label for="non-Vomi">Non</label>
+                            </div>
+                            <h3 class="title-3">Uriné</h3>
+                            
+                            <div class="input-container">
+                                <input id="oui-Urine" type="radio" value="Oui" name="penetration-Urine" class="input" checked>
+                                <label for="oui-Urine">Oui</label>
+                                <input id="non-Urine" type="radio" value="Non" name="penetration-Urine" class="input" checked>
+                                <label for="non-Urine">Non</label>
+                            </div>
+                            <!-- ====================== -->
+                            <h4 class="title-3">Déféqué</h4>
+                            
+                            <div class="input-container">
+                                <input id="oui-Defequer" type="radio" value="Oui" name="Defequer" class="input" checked>
+                                <label for="oui-Defequer">Oui</label>
+                                <input id="non-Defequer" type="radio" value="Non" name="Defequer" class="input" checked>
+                                <label for="non-Defequer">Non</label>
+                            </div>
+                            <!-- =============== -->
+
+                            <h4 class="title-3 normal">Avez vous Changé de vêtements ou sous vêtement</h4>
+                            
+                            <div class="input-container">
+                                <input id="oui-changerHabit" type="radio" value="Oui" name="changerHabit" class="input" checked>
+                                <label for="oui-changerHabit">Oui</label>
+                                <input id="non-changerHabit" type="radio" value="Non" name="changerHabit" class="input" checked>
+                                <label for="non-changerHabit">Non</label>
+                            </div>
+                            
+                            <h4 class="title-3 normal">Avez vous pris un bain ?</h4>
+                            
+                            <div class="input-container">
+                                <input id="oui-takeBath" type="radio" value="Oui" name="takeBath" class="input" checked>
+                                <label for="oui-takeBath">Oui</label>
+                                <input id="non-takeBath" type="radio" value="Non" name="takeBath" class="input" checked>
+                                <label for="non-takeBath">Non</label>
+                            </div>
+                            
+                            <h4 class="title-3 normal">Avez vous Brossé les dents ou rincé la bouche?</h4>
+                            
+                            <div class="input-container">
+                                <input id="oui-brushTees" type="radio" value="Oui" name="brushTees" class="input" checked>
+                                <label for="oui-brushTees">Oui</label>
+                                <input id="non-brushTees" type="radio" value="Non" name="brushTees" class="input" checked>
+                                <label for="non-brushTees">Non</label>
+                            </div>
+                            
+                            <h4 class="title-3 normal">Avez vous eu Rapport sexuel volontaire depuis 1 Agression?</h4>
+                            
+                            <div class="input-container">
+                                <input id="oui-TakeSex" type="radio" value="Oui" name="TakeSex" class="input" checked>
+                                <label for="oui-TakeSex">Oui</label>
+                                <input id="non-TakeSex" type="radio" value="Non" name="TakeSex" class="input" checked>
+                                <label for="non-TakeSex">Non</label>
+                        </div>
+                        
+                        <h4 class="title-3 normal">Date du dernier rapport sexuel volontaire</h4>
+                        <div class="input-container  w-100">
+                                <input id="date-TakeSex" type="date" value="Non" name="Date-TakeSex" class="input w-100" checked>
+                            </div>
+                            
+                        <h4 class="title-3 normal">Heure du dernier rapport sexuel volontai re</h4>
+                        <div class="input-container  w-100">
+                                <input id="time-TakeSex" type="time" value="Non" name="time-TakeSex" class="input" checked>
+                            </div>
+                            
+                        <div class="alert-container"><span></span></div>
+                    </div>
+
+                </div>
+                </div>
+                
+                <!-- Button -->
+                <div class="btn-container">
+                    <button type="button" name="prev" class="prev">Previous</button>
+                    <button type="button" name="next" class="next">Next</button>
+                </div>
+                <!-- Bulle -->
+                <footer class="form-footer">
+                    <a href="#" class="page-num"></a>
+                    <a href="#" class="page-num"></a>
+                    <a href="#" class="page-num"></a>
+                    <a href="#" class="page-num"></a>
+                </footer>
+            </form>
         </div>
-
-
-        <!-- Page 5 =Form 5 -->
-        <div class="step" id="page4">
-<!-- Description de l'agression par la victime-->
-            <div class="title-content">
-                <h2 class="title-1">Description de l'agression par la victime</h2>
-            </div>
-
-<div class="form-group">
-    <div class="input-container">
-        <select name="CirconstanceViolation" id="#CirconstanceViolation" required>
-            <option value="" selected>Descrivez les Circonstance ?</option>
-            <option value="Deplacement-de-population">Deplacement de population</option>
-            <option value="Chemin-de-ecole">Chemin de l'ecole</option>
-            <option value="Dans-le-champ">Dans les champs</option>
-            <option value="A-la-source-d'-eau">A la source d'eau</option>
-            <option value="Autre">Autres...</option>
-        </select>
     </div>
-    <div class="alert-container"><span></span></div>
-</div>
-<div class="form-group">
-    <div class="input-container">
-        <select name="violenceType" id="#violenceType" required>
-            <option value="" selected>Descrivez le type de violence ?</option>
-            <option value="Harcelement">Harcelement</option>
-            <option value="Tentative-de-viol">Tentative de viol</option>
-            <option value="Violence-domestique">Violence domestique</option>
-            <option value="Mutilation">Mutilation</option>
-            <option value="Autre">Autres...</option>
-        </select>
-    </div>
-    <div class="alert-container"><span></span></div>
-</div>
-
-<div class="form-container radio">
-    <div class="form-group radio switch">
-        <h3 class="title-3">Avez-vous subit un pillage ?</h3>
-        <div class="input-container">
-                <input id="pillage" type="checkbox" value="A peur de retourner chez elle" name="pillage" class="switch input" checked>
-                <label for="pillage">Oui ou non</label>
-        </div>
-
-    </div>
-    <div class="alert-container"><span></span></div>
-</div>
-
-<div class="form-group">
-    <div class="input-container">
-        <select name="swordViolence" id="#swordViolence" required>
-            <option value="" selected>Il y a-t-il eu des contrainte(Forçage de l'acte) ?</option>
-            <option value="Avec-une-arme-blanche-ou-à-feu">Avec une arme blanche</option>
-            <option value="Physique">Physique</option>
-            <option value="Drogues">Drogues</option>
-            <option value="Alcool">Alcool</option>
-            <option value="Autre">Autres...</option>
-        </select>
-    </div>
-    <div class="alert-container"><span></span></div>
-</div>
-<div class="form-group">
-    <div class="input-container">
-        <textarea name="otherVictime"
-            placeholder="Autres victimes presentes, nombre de temoins" id="otherVictime"
-            cols="30" rows="4"></textarea>
-        <label for="otherVictime">Autres victimes presentes</label>
-    </div>
-    <div class="alert-container"><span></span></div>
-</div>
-        </div>
-        <!-- Button -->
-        <div class="btn-container">
-            <button type="button" name="prev" class="prev">Previous</button>
-            <button type="button" name="next" class="next">Next</button>
-        </div>
-        <!-- Bulle -->
-        <footer class="form-footer">
-            <a href="#" class="page-num"></a>
-            <a href="#" class="page-num"></a>
-            <a href="#" class="page-num"></a>
-            <a href="#" class="page-num"></a>
-        </footer>
-</form>
-    </div>
-    <script src="./assets/js/stepper.js"></script>
+    
+	<!-- pied de page -->
+	<footer class="footer">
+		<div class=" container container-centered">
+		<div class="footer-infos">
+			<h2 class="title-2 logo">
+				<a href="index.html">
+					One Stop Center
+					<img src="./assets/img/logo.png" alt="Logo">
+				</a>
+			</h2>
+			
+			<p>
+				Addresse:<a href="#">Goma</a>
+			</p>
+			<p>
+				E-mail:<a href="mailto:Onestopcenter@gmail.com">OneStopCenter@gmail.com</a>
+			</p>
+			<p>Tel: <a href="#">+243 991 487 950</a></p>
+		</div>
+		<div class="footer-desc">
+			<h3 class="title-3">Navigation</h3>
+			<ul class="list-group">
+				<li>
+					<a href="index.html">
+						Accueil
+					</a>
+				</li>
+				<li>
+					<a href="#services">
+						Nos soins
+					</a>
+				</li>
+				<li>
+					<a href="#news">
+						Blog
+					</a>
+				</li>
+				<li>
+					<a href="#contact">
+						Contact
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="footer-desc">
+			<h3 class="title-3">A propos</h3>
+			<ul class="list-group">
+				<li>
+					<a href="#">
+						FAQ
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Terme et conditions
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Comment ça marche
+					</a>
+				</li>
+				
+				<li>
+					<a href="#">
+						Nous contacter
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Police et confidentialités
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-desc">
+			<h3 class="title-3">Médecins</h3>
+			<ul class="list-group">
+				<li>
+					<a href="#doctors">
+						Dr. Gloire Congolais
+					</a>
+				</li>
+				<li>
+					<a href="#doctors">
+						Dr. Elisa Nsimire
+					</a>
+				</li>
+				<li>
+					<a href="#doctors">
+						Dr. Denis  Mukwege
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //Pied de page -->
+	<div class="copyright">
+		
+		<!-- Copyright -->
+		<p> © 2021 One Stop Center. Tout droit réservés | Par Arick Bulakali </p>
+	
+		<a href="#home">
+			<span aria-hidden="true"></span>
+		</a>
+	</div>
+	</footer>
+    <script src="./assets/js/app.js"></script>
+        <script src="./assets/js/stepper.js"></script>
 </body>
 
 </html>

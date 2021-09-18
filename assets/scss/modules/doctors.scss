@@ -32,18 +32,23 @@
 
         &:nth-child(1) {
 
-            @include gradient(325deg, $color-title, $color-green);
+            @include gradient(325deg, $color-title, $color-blue);
         }
 
         &:nth-child(2) {
 
-            @include gradient(0deg, $color-title, $color-green);
+            @include gradient(0deg, $color-title, $color-blue);
+        }
+        
+        &:nth-child(3) {
+
+            @include gradient(0deg, $color-title, $color-blue);
         }
 
 
         &:hover {
             border-radius: rem(25);
-            @include gradient(90deg, $color-title, $color-green);
+            @include gradient(90deg, $color-title, $color-blue);
             .infos-details {
 
                 width: 100%;

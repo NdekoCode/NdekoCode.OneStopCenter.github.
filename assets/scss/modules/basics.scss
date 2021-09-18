@@ -12,14 +12,14 @@ html{
     font-feature-settings: "rlig" 1,"calt" 0;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
 
 }
 body{
     font-family:var(--font-primary);
     font-weight:400;
     color:var(--color-dark);
-    background-color: $bg-item;
-    font-family: var(--font-primary);
+    background-color: var(--color-white);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

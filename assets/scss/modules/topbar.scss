@@ -129,12 +129,12 @@
         .navigation-content {
             display: flex;
             justify-content: space-between;
+            align-items: center;
 
             a {
                 margin-right: 0.5rem;
                 text-decoration: none;
-
-                &:hover {
+                &.active,&:hover {
 
                     color: var(--color-title);
                 }
@@ -149,7 +149,46 @@
             }
         }
     }
+    .search{
 
+        margin-right: 10px;
+        display: flex;
+    }
+.search-box{
+    
+    border:0.2px solid transparent;
+    display:flex;
+    padding-right: 5px;
+    height:30px;
+    transition: 0.3s;
+    // padding:rem(8) rem(4);
+    &.active{
+        border-color:rgba(0, 0, 0, 0.25);
+        input{
+            width:100%;
+            background-color: transparent;
+            
+        }
+
+    }
+    input{
+        width:0;
+        border:none;
+        outline:none;
+        height:100%;
+        font-size:0.9rem;
+        padding:0 5px;
+        transition: 0.3s;
+    }
+    button{
+        border:none;
+        background-color: transparent;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        cursor:pointer;
+    }
+}
     .home-contact {
         padding: 0.5rem;
     }
@@ -198,7 +237,9 @@
                 margin-bottom: 0;
             }
         }
-
+        a.active {
+            position:relative;
+        }
         .list-item {
             list-style: none;
 
@@ -208,7 +249,7 @@
                 position: relative;
                 padding-bottom: 0.4rem;
 
-                &::after {
+                &::after{
                     content: '';
                     position: absolute;
                     height: 2px;
@@ -221,11 +262,10 @@
 
 
                 }
-
-                &:hover {
+                &:hover,&.active {
                     color: var(--color-title);
 
-                    &:after {
+                    &:after{
                         transform: scale(1);
 
                     }
@@ -448,6 +488,27 @@
 
 }
 
+@media only screen and(max-width:450px) {
+    .topbar {
+        .navigation{
+            
+        .search{
+            width:100%;
+            margin-bottom: 1rem;
+            .search-box{
+                width:100%;
+                button{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+            .navigation-content{
+                flex-wrap: wrap;
+
+            }
+        }
+    }
+}
 @media only screen and(max-width:350px) {
     .topbar {
         .box {

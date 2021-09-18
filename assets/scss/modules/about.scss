@@ -1,6 +1,8 @@
 #about {
-    background: url('../img/medecin-lol.jpg') no-repeat left/ 55%;
-    background-color: var(--bg-item);
+    background:url('../img/a-propos.jpg') no-repeat left -100px center/ 65%;
+    background-color: var(--color-white);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     overflow: hidden;
     margin: rem(100) 0;
     padding: rem(75) 0;
@@ -18,11 +20,13 @@
     .block {    
         padding-right: 0;
         justify-content: center;
+        background-color: var(--color-white);
     }
 
     .title-3 {
         font-size: 3rem;
         font-weight: 900;
+        color:var(--color-green);
     }
 
     .title-4 {
@@ -31,12 +35,18 @@
 
     p {
         color: lighten($color-gray, 10);
-        font-size: rem(14);
+        font-size: rem(15);
         line-height: rem(25);
         text-align: justify;
     }
-
+    .block-left{
+        
+        padding:10px;
+    }
     .block-right {
+        padding:10px 0;
+        border-radius: 10px;
+        background-color: var(--bg-item);
         display: flex;
         justify-content: center;
         flex-wrap: wrap;

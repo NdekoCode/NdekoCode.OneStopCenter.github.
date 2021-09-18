@@ -1,13 +1,13 @@
 .footer{
     padding:rem(50) 0;
-    padding-bottom:0;
-    color:lighten($color-gray,5);
+    padding-bottom:rem(20);
+    color:lighten($bg-item,5);
+    background-image:none;
     background: url(../img/footer-agency.png) no-repeat bottom -100px center /cover;
-    margin-top:2rem;
-    background-color: var(--color-white);
-    border-top:2px solid lighten($color-gray,55);
+    background-color: #171933;
     a{
         text-decoration: none;
+        color:var(--bg-item);
 
     }
     .container-centered{
@@ -41,7 +41,7 @@
                 right:0;
                 width: 100%;
                 height:4px;
-                background-color: $color-title;
+                background-color: var(--color-white);
                 transform:scale(0);
                 transition: 0.3s;
                 
@@ -52,13 +52,15 @@
                 transform:scale(1);
                 }
                 
-                color: $color-title;
+                color: var(--color-white);
             }
         }
         .title-3{
+            color:var(--bg-item);
             font-size:1.5rem;
         }
         .logo{
+            color:var(--bg-item);
             img{
                 width:40px;
             }
@@ -73,8 +75,8 @@
         }
         .copyright{
             text-align: center;
-            background-color: lighten($color-gray, 15);
-            color:var(--bg-item);
+            border-top:0.5px solid lighten($color-gray,15);
+            color:var(--color-white);
             padding:1rem;
             font-weight:300;
         }

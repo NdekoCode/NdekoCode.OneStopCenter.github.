@@ -87,7 +87,6 @@ const validateForm = ()=>{
     let inputsDate = steps[currentPage].querySelectorAll('input[type="date"]');
     let inputsTime = steps[currentPage].querySelectorAll('input[type="time"]');
     let inputsCheck= steps[currentPage].querySelectorAll('input[type="checkbox"],input[type="radio"]');
-    console.table(inputsCheck)
     let selectInput = steps[currentPage].querySelectorAll('.form-group select');
     if(selectInput){
         selectInput.forEach(select=>{

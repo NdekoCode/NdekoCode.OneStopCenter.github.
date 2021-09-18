@@ -140,6 +140,20 @@ input label {
     justify-content: center;
     padding:20px;
 }
+.form-container .form-group.radio label{
+    margin-right:10px;
+    margin-left:0;
+    padding-left:2px;
+}
+.bold{
+    font-weight:700!important;
+}
+.normal{
+    font-weight:500!important;
+}
+.w-100{
+    width:100%!important;
+}
 .form-group.switch.w-50 .input-container{
     flex-basis: 45%;
 }
@@ -396,6 +410,7 @@ input:focus {
     font-size: 14px;
     transform: scale(0.9);
     border: 2px solid var(--color-white);
+border-radius: 4px;
     background-color: var(--color-white);
     padding-bottom: 0;
     z-index: 5;
@@ -560,6 +575,13 @@ input[type=checkbox]:not(.switch):checked,
 input[type=radio]:not(.switch):checked {
     --o: 1;
 }
+input[type=checkbox]:checked + label,
+input[type=radio]:checked + label {
+    background-image:var(--gradient-1);
+    color:var(--color-white);
+    transition:0.3s;
+}
+
 
 input[type=checkbox]+label,
 input[type=radio]+label {
@@ -568,7 +590,8 @@ input[type=radio]+label {
     display: inline-block;
     vertical-align: top;
     cursor: pointer;
-    margin-left: 4px;
+border-radius: 4px;
+margin-left: 10px;
 }
 
 input[type=checkbox]:not(.switch) {

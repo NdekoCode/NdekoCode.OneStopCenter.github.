@@ -16,7 +16,73 @@
         display: none;
     }
 }
+.contact-page{
+    .banner{
+        
+    background: url('../img/hospital-contact.png') no-repeat right 100px top -10px/ 55%;
+    .title-6{
+        font-size:2rem;
+    }
+    
+    .baseline-name{
+        padding-left:0;
+    }
+    }
+    .baseline-name{
+        text-transform:uppercase;
+        font-size:3rem;
+    }
+}
+.faq{
+    .banner{
+        
+    background: url('../img/hospital.png') no-repeat right -70% top 55%/ 85%;
+    .baseline{
+        
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(5px);
+    }
+    .title-6{
+        font-size:2rem;
+    }
+    .baseline-name{
+        text-transform: uppercase;
+    }
 
+}
+}
+.about{
+    
+    .baseline {
+        
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(5px);
+    padding:5px;
+    text-align:center;
+    background-color:rgba(255,255,255,0.5);
+    border-radius:5px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition:0.3s;
+    &:hover{
+        background-color:rgba(255,255,255,0.7);
+        -webkit-backdrop-filter: saturate(180%) blur(10px);
+        backdrop-filter: saturate(180%) blur(10px)
+    }
+    }
+    .baseline-name{
+        border-radius:2px;
+        text-transform: uppercase;
+    }
+    .banner{
+        
+    background: url('../img/about-us.jpg') no-repeat right top -100px/ cover;
+    align-items: center;
+}
+
+}
 .banner {
     width: 100%;
     display: flex;

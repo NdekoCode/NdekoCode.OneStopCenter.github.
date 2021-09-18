@@ -30,7 +30,7 @@
 					<div class="line"></div>
 					<div class="line"></div>
 				</div>
-				</button>
+			</button>
 				<div class="topbar-home">
 					<div class="topbar-home-container">
 						
@@ -53,26 +53,25 @@
 			<nav class="navbar navbar-top">
 				<div class="header-nav">
 				<ul class="list-group">
-					<li class="list-item"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Accueil</a></li>
+					<li class="list-item"><a href="index.html" class="active"><i class="fa fa-home" aria-hidden="true"></i> Accueil</a></li>
 					<li class="list-item drop">
 						<!-- //Menu deroulant -->
 						<a href="#" class="nav-icon">
 							Services <span class="fa fa-angle-down" aria-hidden="true"></span></a>
 						<ul class="list-drop dropdown">
-							<li class="list-drop-item"><a href="#application">Consulatation en ligne</a></li>
+							<li class="list-drop-item"><a href="./consultation.html">Consulatation en ligne</a></li>
 							<li class="list-drop-item"><a href="#appointment">Réserver en ligne</a></li>
 						</ul>
 					</li>
 					
-					<li class="list-item"><a href="#" class="nav-icon">save women</a></li>
+					<li class="list-item"><a href="./faq.html" class="nav-icon">FAQ</a></li>
 					<li class="list-item drop">
 						<!-- //Menu deroulant -->
-						<a href="#" class="nav-icon">
-							Pages <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+						<a href="./about.html" class="nav-icon">
+							en savoir plus <span class="fa fa-angle-down" aria-hidden="true"></span></a>
 						<ul class="list-drop dropdown">
-							<li class="list-drop-item"><a href="#doctors">Equipe</a></li>
-							<li class="list-drop-item"><a href="#blog">Blogs</a></li>
-							<li class="list-drop-item"><a href="#about">A propos</a></li>
+							<li class="list-drop-item"><a href="index.html#doctors">Equipe</a></li>
+							<li class="list-drop-item"><a href="index.html#news">Blogs</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -80,8 +79,14 @@
 			</nav>
 			<nav class="navigation-profile">
 				<div class="navigation-content">
-				<a href="#contact">Contact</a>
-				<a href="#">S'inscrire</a>
+                    <form class="search">
+						<div class="search-box active">
+							<input class="search-search" type="text" name="search" placeholder="Taper pour rechercher">
+							<button class="btn-search" type="button">
+								<i class="fa fa-search" aria-hidden="true"></i></button>
+						</div>
+					</form>
+				<a href="./contact.html">Contact</a>
 				
 				<div class="home-services">
 					<a class="btn home-link rounded" href="#">Connexion</a>
@@ -197,34 +202,6 @@
 	</div>
 	<!-- //Soins -->
 
-	<!-- A Propos -->
-	<section id="about">
-		<div class="container block">
-			<div class="block-left">
-				<h3 class="title-3">A<span> propos</span> </h3>
-				<p>Depuis plus de 3 ans, notre application propose differents services en temp reel pour suivre les
-					pathologies de nos patients. Dans un cadre professionnel et humain.</p>
-				<p>Une simple consultation à distance, une question, un soin spécifique, nous sommes la pour répondre à
-					vos besoins.</p>
-			</div>
-			<div class="block-right">
-				<div class="block-right-item ico center-column">
-					<span class="fa fa-h-square"></span>
-					<h4 class="title-4">Humain</h4>
-				</div>
-				<div class="block-right-item ico center-column">
-					<span class="fa fa-ambulance"></span>
-					<h4 class="title-4">Rapide</h4>
-				</div>
-				<div class="block-right-item ico center-column">
-					<span class="fa fa-medkit"></span>
-					<h4 class="title-4">Précis</h4>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- //A Propos -->
-
 	<!-- Formulaire rendez-vous -->
 	<section id="appointment">
 		<div class="block container">
@@ -301,7 +278,7 @@
 				<div class="info-item gradient-3">
 					<img src="./assets/img/members/m-5.png" alt="">
 					<div class="infos-details">
-						<h4 class="title-4">Denis Mukwege</h4>
+						<h4 class="title-4">Albert Bulakali</h4>
 						<h6 class="title-6">Generaliste</h6>
 					</div>
 				</div>
@@ -371,43 +348,6 @@
 	</section>
 	<!-- //Articles -->
 
-	<!-- Contact -->
-	<section id="contact">
-		<div class="container block">
-			
-		<div class="block-left center-column gradient-4">
-			<h6 class="title-6">Une question ? un conseil ?</h6>
-			<h3 class="title-3">Contactez-nous</h3>
-		</div>
-		<form action="#" method="post" class="form block-right">
-
-			<div class="form-input text-input">
-				<input type="text" name="name" placeholder="Entrer votre nom..." required="" class="input">
-			</div>
-
-			<div class="form-input text-input">
-				<input type="email" name="email" placeholder="Entrer votre email..." required="" class="input">
-			</div>
-
-			<div class="form-input text-input">
-				<input type="text" name="subject" placeholder="Entrer Le Sujet..." required="" class="input">
-			</div>
-
-			<div class="form-input number-input">
-				<input type="text" name="number" placeholder="Entrer votre numero de téléphone" required="" class="input">
-			</div>
-
-			<div class="form-area text-area">
-				<textarea  name="message" placeholder="Entrer votre message"  id="" cols="30" rows="5" class="textarea"></textarea>
-			</div>
-			<div class="form-submit">
-				<button type="submit" class="btn submit-btn">Envoyer</button>
-			</div>
-		</form>
-		</div>
-	</section>
-	<!-- //Contact -->
-
 	<!-- Chiffres et témoignages -->
 	<section id="facts">
 		<!-- chiffres -->
@@ -471,10 +411,10 @@
 			</h2>
 			
 			<p>
-				Addresse:<a href="#">Goma</a>
+				Addresse: <a href="#">Goma</a>
 			</p>
 			<p>
-				E-mail:<a href="mailto:Onestopcenter@gmail.com">OneStopCenter@gmail.com</a>
+				E-mail: <a href="mailto:Onestopcenter@gmail.com">OneStopCenter@gmail.com</a>
 			</p>
 			<p>Tel: <a href="#">+243 991 487 950</a></p>
 		</div>

@@ -1,8 +1,15 @@
 #news {
     background-image: var(--gradient-1);
-    margin: rem(50) 0;
-    padding:0;
+    &.about{
+        
+    .svg{
+        // background-color: var(--color-white);
+    path{
+        fill:var(--color-white);
+    }
 
+    }
+    }
     .card {
         background-color: var(--color-white);
         flex-basis: 45%;
