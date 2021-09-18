@@ -339,6 +339,13 @@
     }
 }
 
+@media only screen and (max-width:850px) {
+
+    .topbar {
+        .navigation {
+            flex-direction: column-reverse;
+        }
+}
 @media only screen and (max-width:750px) {
     #home {
 
