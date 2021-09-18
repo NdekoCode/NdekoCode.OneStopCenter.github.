@@ -189,6 +189,7 @@
         }
     }
 
+}
     @media only screen and(max-width:850px) {
     
         :root{
@@ -202,13 +203,21 @@
                 background-position:right -150% top 75%;
 
             }
-    
-        }
-    }
+            .contact-page{
+                .banner{
+                    background-position:right 25% top 75%;
+                }
+            }
+        
     .baseline-name {
-        font-size: 3em;
+        font-size: 1.8rem;
     }
+
+            
 }
+            
+    
+    }
 
 @media only screen and(max-width:750px) {
     

@@ -960,7 +960,7 @@ a:hover {
     max-width: 90%;
   }
 }
-@media only screen and (max-width: 991px) and (max-width: 850px) {
+@media only screen and (max-width: 850px) {
   :root {
     --size-title:2.8rem;
   }
@@ -972,10 +972,11 @@ a:hover {
   #home .banner {
     background-position: right -150% top 75%;
   }
-}
-@media only screen and (max-width: 991px) {
-  .baseline-name {
-    font-size: 3em;
+  #home .contact-page .banner {
+    background-position: right 25% top 75%;
+  }
+  #home .baseline-name {
+    font-size: 1.8rem;
   }
 }
 @media only screen and (max-width: 750px) {
